@@ -1,0 +1,465 @@
+body {
+	cursor: none !important;
+	margin: -1px;
+	margin-bottom: -2px;
+	overflow: hidden;
+}
+
+form {
+	z-index: 7;
+}
+
+input {
+	color: purple;
+	background-color: hotpink;
+}
+
+#cursor {
+	z-index: 20;
+ 	cursor: none !important;
+	width: 270px;
+  	height: 240px;
+  	position: absolute;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-image: url(cursor.png);
+}
+
+.girlone{
+	position: absolute;
+	min-width: 120px;
+    min-height: 120px;
+    padding: 13px;
+    display: inline-block;
+	margin-left: 30px;
+	margin-top: 30px;
+	z-index: 3;
+	background-position: center;
+	background-size: 70%;
+	/*border: 1px solid black;*/
+	background-repeat: no-repeat;
+	background-image: url(girl1.png);
+	-webkit-filter: drop-shadow(5px 5px 5px purple);
+  	filter: drop-shadow(5px 5px 5px purple);
+
+}
+
+.girlone:hover {
+	z-index: 5;
+	-webkit-filter: drop-shadow(8px 8px 8px purple);
+  	filter: drop-shadow(8px 8px 8px purple);
+}
+
+.girltwo{
+	position: absolute;
+	min-width: 120px;
+    min-height: 150px;
+    padding: 13px;
+    display: inline-block;
+	margin-left: 60px;
+	margin-top: 30px;
+	z-index: 3;
+	background-position: center;
+	background-size: 70%;
+	/*border: 1px solid black;*/
+	background-repeat: no-repeat;
+	background-image: url(girl2.png);
+	-webkit-filter: drop-shadow(5px 5px 5px purple);
+  	filter: drop-shadow(5px 5px 5px purple);
+
+}
+
+.girltwo:hover {
+	z-index: 5;
+	-webkit-filter: drop-shadow(8px 8px 8px purple);
+  	filter: drop-shadow(8px 8px 8px purple);
+}
+
+.girlthree{
+	position: absolute;
+	min-width: 120px;
+    min-height: 150px;
+    padding: 13px;
+    display: inline-block;
+	margin-left: 20px;
+	margin-top: 100px;
+	z-index: 3;
+	background-position: center;
+	background-size: 70%;
+	/*border: 1px solid black;*/
+	background-repeat: no-repeat;
+	background-image: url(girl3.png);
+	-webkit-filter: drop-shadow(5px 5px 5px purple);
+  	filter: drop-shadow(5px 5px 5px purple);
+
+}
+
+.girlthree:hover {
+	z-index: 5;
+	-webkit-filter: drop-shadow(8px 8px 8px purple);
+  	filter: drop-shadow(8px 8px 8px purple);
+}
+
+.girlfour{
+	position: absolute;
+	min-width: 120px;
+    min-height: 150px;
+    padding: 13px;
+    display: inline-block;
+	margin-left: 150px;
+	margin-top: 20px;
+	z-index: 3;
+	background-position: center;
+	background-size: 100%;
+	/*border: 1px solid black;*/
+	background-repeat: no-repeat;
+	background-image: url(girl5.png);
+	-webkit-filter: drop-shadow(5px 5px 5px purple);
+  	filter: drop-shadow(5px 5px 5px purple);
+
+}
+
+.girlfour:hover {
+	z-index: 5;
+	-webkit-filter: drop-shadow(8px 8px 8px purple);
+  	filter: drop-shadow(8px 8px 8px purple);
+}
+
+.girlfive{
+	position: absolute;
+	min-width: 120px;
+    min-height: 150px;
+    padding: 13px;
+    display: inline-block;
+	margin-left: 150px;
+	margin-top: 20px;
+	z-index: 3;
+	background-position: center;
+	background-size: 30%;
+	/*border: 1px solid black;*/
+	background-repeat: no-repeat;
+	background-image: url(girl6.png);
+	-webkit-filter: drop-shadow(5px 5px 5px purple);
+  	filter: drop-shadow(5px 5px 5px purple);
+
+}
+
+.girlfive:hover {
+	z-index: 5;
+	-webkit-filter: drop-shadow(8px 8px 8px purple);
+  	filter: drop-shadow(8px 8px 8px purple);
+}
+
+.girlsix{
+	position: absolute;
+	min-width: 120px;
+    min-height: 150px;
+    padding: 13px;
+    display: inline-block;
+	margin-left: 120px;
+	margin-top: 120px;
+	z-index: 3;
+	background-position: center;
+	background-size: 65%;
+	/*border: 1px solid black;*/
+	background-repeat: no-repeat;
+	background-image: url(girl7.png);
+	-webkit-filter: drop-shadow(5px 5px 5px purple);
+  	filter: drop-shadow(5px 5px 5px purple);
+
+}
+.girlsix:hover {
+	z-index: 5;
+	-webkit-filter: drop-shadow(8px 8px 8px purple);
+  	filter: drop-shadow(8px 8px 8px purple);
+
+}
+
+.girlseven{
+	position: absolute;
+	min-width: 120px;
+    min-height: 150px;
+    padding: 13px;
+    display: inline-block;
+	margin-left: 20px;
+	margin-top: 200px;
+	z-index: 3;
+	background-position: center;
+	background-size: 50%;
+	/*border: 1px solid black;*/
+	background-repeat: no-repeat;
+	background-image: url(girl8.png);
+	-webkit-filter: drop-shadow(5px 5px 5px purple);
+  	filter: drop-shadow(5px 5px 5px purple);
+
+}
+.girlseven:hover {
+	z-index: 5;
+	-webkit-filter: drop-shadow(8px 8px 8px purple);
+  	filter: drop-shadow(8px 8px 8px purple);
+
+}
+
+.girleight{
+	position: absolute;
+	min-width: 120px;
+    min-height: 150px;
+    padding: 13px;
+    display: inline-block;
+	margin-left: 90px;
+	margin-top: 220px;
+	z-index: 3;
+	background-position: center;
+	background-size: 40%;
+	/*border: 1px solid black;*/
+	background-repeat: no-repeat;
+	background-image: url(girl9.png);
+	-webkit-filter: drop-shadow(5px 5px 5px purple);
+  	filter: drop-shadow(5px 5px 5px purple);
+
+}
+.girleight:hover {
+	z-index: 5;
+	-webkit-filter: drop-shadow(8px 8px 8px purple);
+  	filter: drop-shadow(8px 8px 8px purple);
+
+}
+
+.girlnine{
+	position: absolute;
+	min-width: 120px;
+    min-height: 150px;
+    padding: 13px;
+    display: inline-block;
+	margin-left: 70px;
+	margin-top: 120px;
+	z-index: 3;
+	background-position: center;
+	background-size: 50%;
+	/*border: 1px solid black;*/
+	background-repeat: no-repeat;
+	background-image: url(girl10.png);
+	-webkit-filter: drop-shadow(5px 5px 5px purple);
+  	filter: drop-shadow(5px 5px 5px purple);
+
+}
+.girlnine:hover {
+	z-index: 5;
+	-webkit-filter: drop-shadow(8px 8px 8px purple);
+  	filter: drop-shadow(8px 8px 8px purple);
+
+}
+
+.girlten{
+	position: absolute;
+	min-width: 120px;
+    min-height: 150px;
+    padding: 13px;
+    display: inline-block;
+	margin-left: 20px;
+	margin-top: 300px;
+	z-index: 3;
+	background-position: center;
+	background-size: 75%;
+	/*border: 1px solid black;*/
+	background-repeat: no-repeat;
+	background-image: url(girl11.png);
+	-webkit-filter: drop-shadow(5px 5px 5px purple);
+  	filter: drop-shadow(5px 5px 5px purple);
+
+}
+.girlten:hover {
+	z-index: 5;
+	-webkit-filter: drop-shadow(8px 8px 8px purple);
+  	filter: drop-shadow(8px 8px 8px purple);
+
+}
+
+.girleleven{
+	position: absolute;
+	min-width: 120px;
+    min-height: 150px;
+    padding: 13px;
+    display: inline-block;
+	margin-left: 70px;
+	margin-top: 300px;
+	z-index: 3;
+	background-position: center;
+	background-size: 56%;
+	/*border: 1px solid black;*/
+	background-repeat: no-repeat;
+	background-image: url(girl12.png);
+	-webkit-filter: drop-shadow(5px 5px 5px purple);
+  	filter: drop-shadow(5px 5px 5px purple);
+
+}
+.girleleven:hover {
+	z-index: 5;
+	-webkit-filter: drop-shadow(8px 8px 8px purple);
+  	filter: drop-shadow(8px 8px 8px purple);
+
+}
+
+.girltwelve{
+	position: absolute;
+	min-width: 120px;
+    min-height: 150px;
+    padding: 13px;
+    display: inline-block;
+	margin-left: 170px;
+	margin-top: 300px;
+	z-index: 3;
+	background-position: center;
+	background-size: 120%;
+	/*border: 1px solid black;*/
+	background-repeat: no-repeat;
+	background-image: url(girl13.png);
+	-webkit-filter: drop-shadow(5px 5px 5px purple);
+  	filter: drop-shadow(5px 5px 5px purple);
+
+}
+.girltwelve:hover {
+	z-index: 5;
+	-webkit-filter: drop-shadow(8px 8px 8px purple);
+  	filter: drop-shadow(8px 8px 8px purple);
+
+}
+
+
+
+.house {
+	position: absolute;
+	/*top: 10%;*/
+	width: 60%;
+	height: 100%;
+	left: 23%;
+	z-index: 2;
+	/*cursor: move;*/
+	
+	/*border: 1px black solid;*/
+	
+	
+	background-repeat: no-repeat;
+	
+	background-image: url(roughdream.png);
+	background-position: center;
+	background-size: 43rem;
+	-webkit-filter: drop-shadow(5px 5px 5px purple);
+  	filter: drop-shadow(5px 5px 5px purple);
+	/*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+
+.house:hover {
+	-webkit-filter: drop-shadow(8px 8px 8px purple);
+  	filter: drop-shadow(8px 8px 8px purple);
+
+}
+
+.housetwo {
+	display: none;
+	position: absolute;
+	/*top: 10%;*/
+	width: 60%;
+	height: 100%;
+	left: 23%;
+	z-index: 2;
+	/*cursor: move;*/
+	
+	/*border: 1px black solid;*/
+	
+	
+	background-repeat: no-repeat;
+	
+	background-image: url(housetwo.png);
+	background-position: center;
+	background-size: 43rem;
+	-webkit-filter: drop-shadow(5px 5px 5px purple);
+  	filter: drop-shadow(5px 5px 5px purple);
+}
+
+.housetwo:hover {
+	-webkit-filter: drop-shadow(8px 8px 8px purple);
+  	filter: drop-shadow(8px 8px 8px purple);
+
+}
+
+.housethree {
+	display: none;
+	position: absolute;
+	/*top: 10%;*/
+	width: 71%;
+	height: 100%;
+	top: 10%;
+	left: 17%;
+	z-index: 2;
+	/*cursor: move;*/
+	
+	border: 1px black solid;
+	
+	
+	background-repeat: no-repeat;
+	
+	background-image: url(housethree.png);
+	background-position: center;
+	background-size: 55rem;
+	-webkit-filter: drop-shadow(5px 5px 5px purple);
+  	filter: drop-shadow(5px 5px 5px purple);
+
+}
+
+.housethree:hover {
+	-webkit-filter: drop-shadow(8px 8px 8px purple);
+  	filter: drop-shadow(8px 8px 8px purple);
+
+}
+
+.housefour {
+
+}
+
+.housefour:hover{ 
+
+}
+
+.housefive {
+
+}
+
+.housefive:hover {
+
+}
+
+
+/*.audio {
+	/*display: none;*/
+/*	z-index: 4;
+	position: absolute;
+	margin-left: 10%;
+	margin-top: 60%;
+}*/
+
+
+.play{background: url('play.png') no-repeat;
+	z-index: 200;
+}
+.pause{
+	background: url('pause.png') no-repeat;
+	z-index: 200;
+}
+
+.bg {
+	/*display:none;*/
+	border: 1px solid black;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	position: absolute;
+	background-size: 90rem;
+	background-image: url(grass.jpg);
+	background-position: center;
+
+}

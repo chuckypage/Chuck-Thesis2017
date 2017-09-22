@@ -1,0 +1,407 @@
+body {
+
+	
+	/*height: 100%;
+	width: 100%;*/
+	cursor: none !important;
+	margin: -1px;
+	margin-top: -1px;
+	
+}
+
+html {
+	/*width: 100%;
+    height: 100%;*/
+    background-attachment: fixed;
+	background-image: url(bluebackground.png);
+	background-repeat: no-repeat;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#cursor {
+	z-index: 5;
+ 	cursor: none !important;
+	width: 270px;
+  	height: 240px;
+  	position: absolute;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-image: url(flame.gif);
+}
+
+.container {
+	position: relative;
+	width: 1000px;
+}
+
+.buttonone {
+	cursor: none;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 25px;
+    background-image: url(clickforfun.png);	
+    /*border: solid black 1px;*/
+    background-repeat: no-repeat;
+	display: none;
+    width: 500px;
+    height: 200px;
+    background-size: contain;
+         -webkit-filter: drop-shadow(5px 5px 5px red);
+  	filter: drop-shadow(5px 5px 5px red);
+
+}
+
+.buttonone:hover {
+	background-size: 96%;
+		-webkit-filter: drop-shadow(8px 8px 8px red);
+  	filter: drop-shadow(8px 8px 8px red);
+
+}
+
+.buttontwo {
+	/*border: 1px black solid;*/
+	cursor: none;
+	display: none;
+     margin: auto;
+     top: 700px;
+     right: 100px;
+     bottom: 0;
+     left: 0;
+     
+	position: absolute;
+	/*margin-left: 100px;
+	margin-top: 60px;*/
+    background-image: url(hotmoms.png);	
+    background-repeat: no-repeat;
+	display: none;
+	 max-width: 100%;
+    width: 500px;
+    height: 60px;
+    background-size: contain;
+         -webkit-filter: drop-shadow(5px 5px 5px red);
+  	filter: drop-shadow(5px 5px 5px red);
+
+}
+
+.buttontwo:hover {
+	z-index: 5;
+	background-size: 98%;
+	-webkit-filter: drop-shadow(8px 8px 8px red);
+  	filter: drop-shadow(8px 8px 8px red);
+
+}
+
+.connect {
+	background-position: center;
+	/*border: 1px black solid;*/
+	cursor: none;
+	display: none;
+     margin: auto;
+     top: 700px;
+     right: 700px;
+     bottom: 0;
+     left: 0;
+	position: absolute;
+	background-image: url(connectto.png);	
+    background-repeat: no-repeat;
+	 max-width: 100%;
+    width: 170px;
+    height: 170px;
+    background-size: 105%;
+         -webkit-filter: drop-shadow(5px 5px 5px red);
+  	filter: drop-shadow(5px 5px 5px red);
+
+}
+
+.connect:hover {
+	z-index: 5;
+
+	width: 600px;
+	height: 600px;
+	background-size: 100%;
+
+
+}
+
+.titleft {
+	/*border: black 1px solid;*/
+	cursor: none;
+	display: none;
+     margin: auto;
+     top: 1300px;
+     right: 0px;
+     bottom: 0;
+     left: 50;
+	position: absolute;
+    background-image: url(titleft.png);	
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px hotpink);
+  	filter: drop-shadow(5px 5px 5px hotpink);
+   -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+.titleft:hover {
+	-webkit-filter: drop-shadow(8px 8px 8px hotpink);
+  	filter: drop-shadow(8px 8px 8px hotpink);
+	 -webkit-animation: none;
+    animation: none; 
+	background-size: 98%;
+
+}	
+
+.titright {
+	/*border: black 1px solid;*/
+	cursor: none;
+	display: none;
+     margin: auto;
+     top: 600px;
+     right: 100px;
+     bottom: 0;
+     left: 1000px;
+	position: absolute;
+    background-image: url(titright.png);	
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px hotpink);
+  	filter: drop-shadow(5px 5px 5px hotpink);
+  	-webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+
+
+
+}
+
+.titright:hover {
+	background-size: 98%;
+	-webkit-filter: drop-shadow(8px 8px 8px hotpink);
+  	filter: drop-shadow(8px 8px 8px hotpink);
+	 -webkit-animation: none;
+    animation: none; 
+}
+
+
+/*.console-tit {
+	position: absolute;
+	
+	right: 100%;
+	bottom: -20%;
+	width: 30%;
+	height: 80%;
+}
+
+.console-row {
+	display: flex;
+	justify-content: space-between;
+	border: 1px yellow solid;
+	background-color: pink;
+}*/
+
+/*.console-back{
+	left: 40%;
+	bottom: 10%;
+	width: 20%;
+	height: 15%;
+	background-image: url(titleft.png);
+	border: 1px solid black;
+	background-size: 350%;
+	background-repeat: no-repeat;
+	background-position: 34% 42%;
+
+}
+
+.console-forward{
+	left: 40%;
+	bottom: 10%;
+	width: 20%;
+	height: 15%;
+	background-image: url(titright.png);
+	border: 1px solid black;
+	background-size: 350%;
+	background-repeat: no-repeat;
+	background-position: 70% 40%;
+
+}*/
+
+/*.bg {*/
+	/*background-attachment: fixed;*/
+	/*border: 1px solid black;
+	background-repeat: no-repeat;
+	width: 100%;
+    height: 100%;
+	z-index: -1;
+	position: absolute;
+	background-size: cover;
+	background-image: url(bluebackground.png);
+	background-position: center center;
+	transform: translate3d(0,0,0); 
+}*/
+
+/*.fool {
+	display: none;
+	
+	background-image: url(girl3.jpg);
+	background-size: 30rem;
+}
+
+.cowgirl {
+	display: none;
+	
+	background-image: url(girl1.jpg);
+	background-size: 30rem;
+}
+
+.dress {
+	display: none;
+	
+	background-image: url(girl2.jpg);
+	background-size: 30rem;
+}
+*/
+
+
+
+.trigger {
+	display: none;
+    width: 200px;
+    height: 60px;
+    color: #FFF;
+    background-color: green;
+}
+
+.soundconsole {
+	/*display: none;
+	color:pink;
+	border: black solid 1px;
+	 position: absolute;
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     width: 100px;
+     height: 100px;*/
+}
+
+.console {
+	cursor: none;
+	background-image: url("blueconsole.png");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*border: solid black 1px;*/
+	 position: absolute;
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     width: 700px;
+     height: 700px;
+     -webkit-filter: drop-shadow(5px 5px 5px blue);
+  	filter: drop-shadow(5px 5px 5px blue);
+}
+
+.console:hover {
+	background-size: 75%;
+	-webkit-filter: drop-shadow(8px 8px 8px blue);
+  	filter: drop-shadow(8px 8px 8px blue);
+}
+
+.border {
+	display: none;
+	/*border: 1px solid black;*/
+	margin: auto;
+     top: 60%;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 400px;
+	z-index: 6;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	background-image: url("flameborder.gif");
+}
+
+.mainlogo{
+
+	background-image: url("boyswillbetwo.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*border: solid black 1px;*/
+	 position: absolute;
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     width: 700px;
+     height: 400px;
+     -webkit-filter: drop-shadow(5px 5px 5px black);
+  	filter: drop-shadow(5px 5px 5px black);
+-webkit-animation: pulse linear 1s infinite;
+	animation: pulse linear 1s infinite;
+}
+@-webkit-keyframes pulse {
+	0% { width:300px; } 
+	50% { width:440px; } 
+	100% { width:300px; }
+}
+@keyframes pulse {
+	0% { width:300px; } 
+	50% { width:440px; } 
+	100% { width:300px; }
+}
+
+ 
+
+ .mainlogo:hover {
+ 	-webkit-filter: drop-shadow(8px 8px 8px black);
+  	filter: drop-shadow(8px 8px 8px black);
+
+ 	-webkit-animation: pulse linear .5s infinite;
+	animation: pulse linear .5s infinite;
+}
+@-webkit-keyframes pulse {
+	0% { width:300px; } 
+	50% { width:440px; } 
+	100% { width:300px; }
+}
+@keyframes pulse {
+	0% { width:300px; } 
+	50% { width:440px; } 
+	100% { width:300px; }
+
+
+
+
+
+ 	
