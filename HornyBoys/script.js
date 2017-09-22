@@ -47,6 +47,8 @@ $('.trigger').hover(
             pointerEvents: 'none'
 
 	});
+	
+
 
 
 });
