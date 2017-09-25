@@ -51,44 +51,82 @@ html {
     background-size: contain;
          -webkit-filter: drop-shadow(5px 5px 5px red);
   	filter: drop-shadow(5px 5px 5px red);
+  	-webkit-animation: pulse linear .5s infinite;
+	animation: pulse linear .5s infinite;
+}
+@-webkit-keyframes pulse {
+	0% { width:300px; } 
+	50% { width:440px; } 
+	100% { width:300px; }
+}
+@keyframes pulse {
+	0% { width:300px; } 
+	50% { width:440px; } 
+	100% { width:300px; }
 
 }
 
 .buttonone:hover {
-	background-size: 96%;
-		-webkit-filter: drop-shadow(8px 8px 8px red);
-  	filter: drop-shadow(8px 8px 8px red);
+	cursor: pointer;
+	background-size: 93%;
+		-webkit-filter: drop-shadow(10px 10px 10px red);
+  	filter: drop-shadow(10px 10px 10px red);
 
 }
 
 .buttontwo {
-	/*border: 1px black solid;*/
-	cursor: none;
-	display: none;
+	display:none;
+	padding-bottom: 10px;
+	background-size: contain;
+	background-image: url("hotmoms.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*border: solid black 1px;*/
+	 position: absolute;
      margin: auto;
-     top: 700px;
-     right: 100px;
+     top: 0;
+     right: 0;
      bottom: 0;
      left: 0;
-     
-	position: absolute;
+     width: 800px;
+     height: 100px;
+     -webkit-filter: drop-shadow(5px 5px 5px red);
+  	filter: drop-shadow(5px 5px 5px red);
+  	
+	
+	
+	/*border: 1px black solid;*/
+	/*cursor: none;*/
+	/*display: none;*/
+	/*background-position: center;*/
+ /*    margin: auto;*/
+ /*    top: 0;*/
+ /*    right: 0;*/
+ /*    bottom: 0;*/
+ /*    left: 0;*/
+	/*position: absolute;*/
 	/*margin-left: 100px;
 	margin-top: 60px;*/
-    background-image: url(hotmoms.png);	
-    background-repeat: no-repeat;
-	display: none;
-	 max-width: 100%;
-    width: 500px;
-    height: 60px;
-    background-size: contain;
-         -webkit-filter: drop-shadow(5px 5px 5px red);
-  	filter: drop-shadow(5px 5px 5px red);
+ /*   background-image: url(hotmoms.png);	*/
+ /*   background-repeat: no-repeat;*/
+	/*display: none;*/
+	/*max-width: 100%;*/
+ /*   width: 700px;*/
+ /*   height: 700px;*/
+ /*   background-size: contain;*/
+ /*        -webkit-filter: drop-shadow(5px 5px 5px red);*/
+ /* 	filter: drop-shadow(5px 5px 5px red);*/
 
 }
 
 .buttontwo:hover {
+	cursor: pointer;
+	background-image: url(lightmoms.png);
+	 -webkit-animation: none;
+    animation: none; 
 	z-index: 5;
-	background-size: 98%;
+	background-size: 96%;
 	-webkit-filter: drop-shadow(8px 8px 8px red);
   	filter: drop-shadow(8px 8px 8px red);
 
@@ -183,6 +221,193 @@ html {
   	filter: drop-shadow(5px 5px 5px hotpink);
   	-webkit-animation: rotation 2s infinite linear;
 }
+
+.secretary {
+	cursor: none;
+	display: none;
+    margin: auto;
+    top: 600px;
+    right: 50px;
+    bottom: 0;
+    left: 400px;
+	position: absolute;
+    background-image: url(secretary.png);	
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 450px;
+    background-size: 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px yellow);
+  	filter: drop-shadow(5px 5px 5px yellow);
+	
+}
+
+.secretary:hover {
+	z-index: 5;
+	background-size: 98%;
+	-webkit-filter: drop-shadow(8px 8px 8px yellow);
+  	filter: drop-shadow(8px 8px 8px yellow);
+}
+
+
+.student {
+	cursor: none;
+	display: none;
+    margin: auto;
+    top: 1500px;
+    right: 20px;
+    bottom: 0;
+    left: 800px;
+	position: absolute;
+    background-image: url(teens.png);	
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 450px;
+    background-size: 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px lime);
+  	filter: drop-shadow(5px 5px 5px lime);
+	
+}
+
+.student:hover {
+	z-index: 5;
+	background-size: 98%;
+	-webkit-filter: drop-shadow(8px 8px 8px lime);
+  	filter: drop-shadow(8px 8px 8px lime);
+	
+}
+
+.pussy {
+	cursor: none;
+	display: none;
+    margin: auto;
+    top: 1500px;
+    right: 400px;
+    bottom: 0;
+    left: 1px;
+	position: absolute;
+    background-image: url(seepussy.png);	
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 450px;
+    background-size: 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px hotpink);
+  	filter: drop-shadow(5px 5px 5px hotpink);
+  	-ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+	
+}
+
+.pussy:hover {
+	z-index: 5;
+	background-size: 98%;
+	-webkit-filter: drop-shadow(8px 8px 8px hotpink);
+  	filter: drop-shadow(8px 8px 8px hotpink);
+	
+}
+
+.bible {
+	cursor: none;
+	display: none;
+    margin: auto;
+    top: 1800px;
+    right: 20px;
+    bottom: 0;
+    left: 900px;
+	position: absolute;
+    background-image: url(image.gif);	
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 450px;
+    background-size: 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px hotpink);
+  	filter: drop-shadow(5px 5px 5px hotpink);
+  	animation-iteration-count:infinite;
+  	animation-name: rotate;
+  	animation-duration: 4s;
+  	animation-timing-function: linear;
+}
+@-webkit-keyframes rotate {
+    from {transform: rotateY( 0deg );}
+    to {transform: rotateY( -360deg );}
+	
+}
+
+.bible:hover {
+	z-index: 5;
+	background-size: 98%;
+	-webkit-filter: drop-shadow(8px 8px 8px hotpink);
+  	filter: drop-shadow(8px 8px 8px hotpink);
+	
+}
+
+	div.a {
+	background-image: url(free.png);	
+    background-repeat: no-repeat;
+	display: none;
+	background-size: 105%;
+	width: 300px;
+	height:400px;
+	position:fixed;
+	-webkit-filter: drop-shadow(5px 5px 5px yellow);
+  	filter: drop-shadow(5px 5px 5px yellow);
+	    
+	}
+
+	div.b {
+	background-image: url(clickhere.png);	
+    background-repeat: no-repeat;
+	display: none;
+	width: 300px;
+	height: 300px;
+	background-size: 110%;
+	position:fixed;
+	-webkit-filter: drop-shadow(5px 5px 5px red);
+  	filter: drop-shadow(5px 5px 5px red);
+	    
+	}
+
+	div.c {
+	background-image: url(girls.png);	
+    background-repeat: no-repeat;
+	display: none;
+	width: 350px;
+	height: 300px;
+	background-size: 110%;
+	position:fixed;
+	-webkit-filter: drop-shadow(5px 5px 5px hotpink);
+  	filter: drop-shadow(5px 5px 5px hotpink);
+	
+	    
+	}
+	
+	div.d {
+	background-image: url(goldfree.png);	
+    background-repeat: no-repeat;
+	display: none;
+	width: 350px;
+	height: 300px;
+	background-size: 100%;
+	position:fixed;
+	-webkit-filter: drop-shadow(5px 5px 5px yellow);
+  	filter: drop-shadow(5px 5px 5px yellow);
+	
+	    
+	}
+	
+	div.e {
+	background-image: url(busty.png);	
+    background-repeat: no-repeat;
+	display: none;
+	width: 420px;
+	height: 300px;
+	background-size: 90%;
+	position:fixed;
+	-webkit-filter: drop-shadow(5px 5px 5px yellow);
+  	filter: drop-shadow(5px 5px 5px yellow);
+	
+	    
+	}
 
 @-webkit-keyframes rotation {
 		from {
@@ -327,9 +552,10 @@ html {
 }
 
 .console:hover {
+	/*cursor: pointer;*/
 	background-size: 75%;
-	-webkit-filter: drop-shadow(8px 8px 8px blue);
-  	filter: drop-shadow(8px 8px 8px blue);
+	/*-webkit-filter: drop-shadow(8px 8px 8px blue);*/
+ /* 	filter: drop-shadow(8px 8px 8px blue);*/
 }
 
 .border {
@@ -384,6 +610,7 @@ html {
  
 
  .mainlogo:hover {
+ 	cursor: pointer;
  	-webkit-filter: drop-shadow(8px 8px 8px black);
   	filter: drop-shadow(8px 8px 8px black);
 

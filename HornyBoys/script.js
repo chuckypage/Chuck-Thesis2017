@@ -8,13 +8,51 @@ $(document).ready(function(){
     $('.mainlogo').click(function(){
         $('.mainlogo').hide();
         $('.console').hide();
-        $('.buttonone').show();
+        // $('.buttonone').show();
         $('.buttontwo').show();
-        $('.titleft').show();
+        // $('.titleft').show();
+        // $('.titright').show();
+        
+        $('.border').hide();
+        
+        
+    })
+    
+     $('.titleft').click(function(){
+        $('.a').show();
+        $('.b').show(); 
+        $('.c').show(); 
+        $('.d').show(); 
+        $('.e').show();
+        $('.f').show();
+        $('.g').show();
+        $('.h').show();
+      
+     })
+     
+     $('.buttontwo').click(function(){
+        $('.buttonone').show();
+      
+     })
+     
+      $('.buttonone').click(function(){
         $('.titright').show();
         $('.connect').show();
-        $('.border').hide();
-    })
+     })
+     
+     $('.titright').click(function(){
+        $('.secretary').show();
+        $('.pussy').show();
+        $('.bible').show();
+     })
+
+    $('.connect').click(function(){
+        $('.titleft').show();
+        $('.student').show();
+     })
+    
+   
+
 
 $('.mainlogo').hover(
     function() {
@@ -48,6 +86,59 @@ $('.trigger').hover(
 
 	});
 	
+	
+	
+	
+	$(document).ready(function(){
+  $('.a').each(animateDiv);
+  $('.b').each(animateDiv);
+  $('.c').each(animateDiv);
+  $('.d').each(animateDiv);
+  $('.e').each(animateDiv);
+  $('.f').each(animateDiv);
+  $('.g').each(animateDiv);
+});
+
+function makeNewPosition(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() - 50;
+    var w = $(window).width() - 50;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateDiv(){
+  var el = $(this);
+    var newq = makeNewPosition();
+    var oldq = $(el).offset();
+    var speed = calcSpeed([oldq.top, oldq.left], newq);
+    
+    $(el).animate({ top: newq[0], left: newq[1] }, speed, function(){
+      animateDiv.apply(this);        
+    });
+    
+};
+
+
+function calcSpeed(prev, next) {
+    
+    var x = Math.abs(prev[1] - next[1]);
+    var y = Math.abs(prev[0] - next[0]);
+    
+    var greatest = x > y ? x : y;
+    
+    var speedModifier = .8;
+
+    var speed = Math.ceil(greatest/speedModifier);
+
+    return speed;
+
+}
 
 
 
