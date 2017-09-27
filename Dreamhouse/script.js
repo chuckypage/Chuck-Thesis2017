@@ -6,7 +6,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 
 
 $(document).ready(function() {
-    $(".girlone").draggable().resizable();
+    $(".girlone").draggable().resizable().droppable();
     $( ".girltwo" ).draggable().resizable();
     $( ".girlthree" ).draggable().resizable();
     $( ".girlfour" ).draggable().resizable();
@@ -18,11 +18,21 @@ $(document).ready(function() {
     $( ".girlten" ).draggable().resizable();
     $( ".girleleven" ).draggable().resizable();
     $( ".girltwelve" ).draggable().resizable();
-    $( ".house" ).draggable({containment: "html"});
-    $( ".housetwo" ).draggable({containment: "html"});
-    $( ".housethree" ).draggable({containment: "html"});
-    $( ".housefour" ).draggable({containment: "html"});
+    $( ".girlthirteen" ).draggable().resizable();
+    $( ".girlfourteen" ).draggable().resizable();
+    $( ".girlfifteen" ).draggable().resizable();
+    $( ".girlsixteen" ).draggable().resizable();
+    $( ".girlseventeen" ).draggable().resizable();
+    $( ".girleighteen" ).draggable().resizable();
+    $( ".girlnineteen" ).draggable().resizable();
+    $( ".girltwenty" ).draggable().resizable();
+    $( ".house" ).draggable();
+    $( ".housetwo" ).draggable();
+    $( ".housethree" ).draggable();
+    $( ".housefour" ).draggable();
   });
+
+
 
 
     $(document).on('mousemove', function(e){
@@ -34,7 +44,7 @@ $(document).ready(function() {
     });
 
 // });
-    $('.girltwelve, .girleleven, .girlten, .girlnine, .girleight, .girlseven, .girlsix, .girlfive, .girlfour, .girlthree, .girltwo, .girlone').hover(
+    $('.girlfourteen, .girlfifteen, .girlsixteen, .girlseventeen, .girleighteen, .girlnineteen, .girltwenty, .girlthirteen, .girltwelve, .girleleven, .girlten, .girlnine, .girleight, .girlseven, .girlsix, .girlfive, .girlfour, .girlthree, .girltwo, .girlone').hover(
     function() {
         sound = $(this).children()[0];
         sound.play();
@@ -43,7 +53,7 @@ $(document).ready(function() {
         sound.currentTime = 0;
     });
 
-});
+
 
     $(document).ready(
     function() {
@@ -65,7 +75,21 @@ $(document).ready(function() {
             });
 
 
-});
+        // $("#panzoom").panzoom({
+        //   $zoomIn: $(".zoom-in"),
+        //   $zoomOut: $(".zoom-out"),
+        //   $zoomRange: $(".zoom-range"),
+        //   $reset: $(".reset"),
+          
+        //   contain: 'invert',
+        // });
+
+        
+        
+    });
+    });
+
+
 
 
 

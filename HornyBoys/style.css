@@ -1,6 +1,4 @@
 body {
-
-	
 	/*height: 100%;
 	width: 100%;*/
 	cursor: none !important;
@@ -15,10 +13,10 @@ html {
     background-attachment: fixed;
 	background-image: url(bluebackground.png);
 	background-repeat: no-repeat;
--webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 
 #cursor {
@@ -156,7 +154,7 @@ html {
 
 .connect:hover {
 	z-index: 5;
-
+	cursor: pointer;
 	width: 600px;
 	height: 600px;
 	background-size: 100%;
@@ -194,11 +192,13 @@ html {
 }
 
 .titleft:hover {
+	cursor: pointer;
 	-webkit-filter: drop-shadow(8px 8px 8px hotpink);
   	filter: drop-shadow(8px 8px 8px hotpink);
 	 -webkit-animation: none;
     animation: none; 
 	background-size: 98%;
+	z-index: 5;
 
 }	
 
@@ -222,6 +222,16 @@ html {
   	-webkit-animation: rotation 2s infinite linear;
 }
 
+.titright:hover {
+	z-index: 5;
+	background-size: 98%;
+	-webkit-filter: drop-shadow(8px 8px 8px hotpink);
+  	filter: drop-shadow(8px 8px 8px hotpink);
+	 -webkit-animation: none;
+    animation: none; 
+    cursor: pointer;
+}
+
 .secretary {
 	cursor: none;
 	display: none;
@@ -242,6 +252,7 @@ html {
 }
 
 .secretary:hover {
+	cursor: pointer;
 	z-index: 5;
 	background-size: 98%;
 	-webkit-filter: drop-shadow(8px 8px 8px yellow);
@@ -269,6 +280,7 @@ html {
 }
 
 .student:hover {
+	cursor: pointer;
 	z-index: 5;
 	background-size: 98%;
 	-webkit-filter: drop-shadow(8px 8px 8px lime);
@@ -303,7 +315,7 @@ html {
 	background-size: 98%;
 	-webkit-filter: drop-shadow(8px 8px 8px hotpink);
   	filter: drop-shadow(8px 8px 8px hotpink);
-	
+	cursor: pointer;
 }
 
 .bible {
@@ -334,6 +346,9 @@ html {
 }
 
 .bible:hover {
+	 -webkit-animation: none;
+    animation: none; 
+	cursor: pointer;
 	z-index: 5;
 	background-size: 98%;
 	-webkit-filter: drop-shadow(8px 8px 8px hotpink);
@@ -421,13 +436,7 @@ html {
 
 }
 
-.titright:hover {
-	background-size: 98%;
-	-webkit-filter: drop-shadow(8px 8px 8px hotpink);
-  	filter: drop-shadow(8px 8px 8px hotpink);
-	 -webkit-animation: none;
-    animation: none; 
-}
+
 
 
 /*.console-tit {
