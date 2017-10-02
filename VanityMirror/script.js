@@ -82,7 +82,7 @@
 
 var interval = undefined;
 $(document).ready(function () {
-    interval = setInterval(getNext, 2000); // milliseconds
+    interval = setInterval(getNext, 10000000); // milliseconds
     $('.console-forward').on('click', getNext);
     $('.console-back').on('click', getPrev);
 });
