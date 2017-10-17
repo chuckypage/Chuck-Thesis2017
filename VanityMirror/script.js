@@ -107,5 +107,7 @@ function transition($curr, $next) {
         $curr.hide().css('z-index', 0);
         $next.css('z-index', 1);
     });
+    
+
 
 }

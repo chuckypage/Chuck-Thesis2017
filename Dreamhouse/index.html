@@ -24,6 +24,73 @@
 <!--  <button class="reset">Reset</button>-->
 <!--</section>-->
 
+<div class="playnow"></div>
+		<div id="contents">
+
+<div class="dropdown">
+  <center><a href="#one"><div id="titicon"><img src="" ></div></a></center>
+  <div class="dropdown-content">
+    <div class="contents_link"><a href="#one"> Boys will be Boys </a></div>
+  </div>
+</div>
+
+<div class="dropdown">
+  <center><a href="#two"><div id="strippericon"><img src="" ></div></a></center>
+  <div class="dropdown-content">
+    <div class="contents_link"><a href="#two"> Dream House </a></div>
+  </div>
+</div>
+
+<div class="dropdown">
+  <center><a href="#three"><div id="fileicon"><img src="" ></div></a></center>
+  <div class="dropdown-content">
+    <div class="contents_link"><a href="#three"> Read Me </a></div>
+  </div>
+</div>
+
+<div class="dropdown">
+  <center><a href="#four"><div id="handicon"><img src="" ></div></a></center>
+  <div class="dropdown-content">
+    <div class="contents_link"><a href="#four"> Vanity Mirror </a></div>
+  </div>
+</div>
+
+<div class="dropdown">
+  <center><a href="#five"><div id="buynowicon"><img src="" ></div></a></center>
+  <div class="dropdown-content">
+    <div class="contents_link"><a href="#five"> Buy Now </a></div>
+  </div>
+</div>
+
+<div class="dropdown">
+ <center> <a href="#six"><div id="bigfoot_icon"><img src="img/desktop_icons/transparent.png" ></div></a></center>
+  <div class="dropdown-content">
+    <div class="contents_link"><a href="#six"> Chapter IV </a></div>
+  </div>
+</div>
+
+<div class="dropdown">
+  <center><a href="#seven"><div id="massage_icon"><img src="img/desktop_icons/transparent.png" ></div></a></center>
+  <div class="dropdown-content">
+    <div class="contents_link"><a href="#seven"> Chapter V </a></div>
+  </div>
+</div>
+
+<div class="dropdown">
+  <center><a href="#eight"><div id="conclusion_icon"><img src="img/desktop_icons/transparent.png" ></div></a></center>
+  <div class="dropdown-content">
+    <div class="contents_link"><a href="#eight"> Conclusion </a></div>
+  </div>
+</div>
+
+</div>
+
+<div id="info"> 
+
+    <div class="info_content"> Info Goes Here...</div> 
+
+</div>
+
 	<div id="cursor"></div>
 <!-- want to be able to zoom background img on click which solves issue of feeling like the dreamhouse is too small -->
 	<div class="bg">
@@ -204,6 +271,16 @@
 
 
 </body>
+	<script>
+    	    $('.playnow').on('click',function() {
+    if($('#contents').css('left')=='0px'){
+        $('#contents').animate({left: '-250px'}, 500);        
+    }else{
+        $('#contents').animate({left:0}, 500); 
+    }
+});
+    	    
+    	</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.panzoom/2.0.6/jquery.panzoom.min.js"></script>
 

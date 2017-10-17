@@ -1,12 +1,8 @@
 body {
-    /*background-color: pink;*/
-	cursor: none;
 	margin: -1px;
 	margin-bottom: -1px;
 	margin-top: -1px;
 	/*overflow: visible;*/
-	background-color: white;
-	
 }
 
 html {
@@ -23,6 +19,242 @@ html {
   	
 }
 
+a {
+	color: #f900b7;
+    text-decoration: none;
+}
+
+a.in_text {
+
+	color: #f900b7;
+    text-decoration: none;
+    -webkit-filter: drop-shadow(2px 2px 2px hotpink);
+}
+
+a.in_text:hover {
+
+	color: purple;
+    text-decoration: none;
+    -webkit-filter: drop-shadow(2px 2px 2px hotpink);
+}
+
+#info {
+    /*border: 1px solid black;*/
+	position:fixed;
+	right: 20px;
+	bottom:30px;
+    width: 100px;
+    height: 100px;
+    background-image: url("info.png");
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-filter: drop-shadow(0px 0px 2px #f900b7 );
+    -webkit-transition: width 2s, height 2s, background-size 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, background-size 2s, transform 2s;
+	z-index: 8888888;
+	animation-iteration-count:infinite;
+  	animation-name: rotate;
+  	animation-duration: 4s;
+  	animation-timing-function: linear;
+}
+@-webkit-keyframes rotate {
+    from {transform: rotateY( 0deg );}
+    to {transform: rotateY( -360deg );}
+
+}
+
+#info:hover {
+    animation: none;
+    background-size: 100px 100px;
+    background-position: left top;
+    background-color: hotpink;
+	width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    -webkit-filter: drop-shadow(6px 6px 6px #f900b7);
+  	filter: drop-shadow(6px 6px 6px #f900b7);
+    
+}
+
+.info_content {
+    padding-top: 10px;
+    padding-left: 100px;
+    color: #001df9;
+    display: none;
+    font-family: sans-serif;
+    font-style: s;
+    font-size: 24px;
+    width:300px;
+    -webkit-filter: drop-shadow(0px 0px 2px white);
+
+
+}
+
+#info:hover .info_content {
+	display:block;
+	
+
+}
+
+.play {
+    /*border: pink 1px solid;*/
+    position: fixed;
+    width: 150px;
+	height: 50px;
+    background-image: url("playnow.png");
+	background-repeat: no-repeat;
+    background-size: 150px;
+    /*-webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;*/
+    
+}
+
+.play:hover {
+    width: 160px;
+	background-size: 160px;
+	height: 56px; 
+	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
+  	filter: drop-shadow(6px 6px 6px #f900b7);
+}
+
+#contents {
+    /*border: 1px black solid;*/
+    /*background-color: hotpink;*/
+    position: fixed;
+    bottom: 15px;
+    left: -80px;
+    display: table;
+    height: 90%;
+    z-index: 150;
+    width: 2%;
+   
+}
+
+.dropdown {
+    display: table-row;
+    text-align: center;
+    -webkit-filter: drop-shadow(0px 2px 2px purple);
+}
+
+/*.dropdown > img {*/
+/*    display: table-cell;*/
+
+/*}*/
+
+.dropdown-content {
+    /*background-color: grey;*/
+    display: table-cell;
+    vertical-align: middle;
+    visibility:hidden;
+    opacity:0;
+    transition:opacity 0.2s linear;
+}
+
+.dropdown:hover .dropdown-content {
+	visibility: visible;
+     opacity: 1;
+
+}
+.contents_link {
+    text-align: center;
+    font-size: 24px;
+ /*   font-family: "Stanley", Times, serif;*/
+	/*font-style: italic;*/
+}
+
+#titicon {
+	width: 120px;
+    height: 94px;
+    background-image: url("boob.png");
+	background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
+}
+
+#titicon:hover {
+	width:140px;
+	background-size: 120px;
+	height: 120px;
+	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
+  	filter: drop-shadow(6px 6px 6px #f900b7);
+	
+}
+
+#strippericon {
+	width: 100px;
+	height: 150px;
+    background-image: url("stripper.png");
+	background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;
+    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
+}
+
+#strippericon:hover {
+	width: 120px;
+	height: 170px;
+	background-size: 90px;
+	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
+  	filter: drop-shadow(6px 6px 6px #f900b7);
+}
+
+#fileicon {
+	width: 60px;
+	height: 75px;
+    background-image: url("run.gif");
+	background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: center;
+    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
+}
+
+#fileicon:hover {
+	
+	width: 70px;
+	height: 87px;
+	background-size: 70px;
+	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
+  	filter: drop-shadow(6px 6px 6px #f900b7);
+}
+
+#handicon {
+    z-index: 20;
+	width: 100px;
+	height: 150px;
+	background-position: center;
+    background-image: url("flowerhand.png");
+	background-repeat: no-repeat;
+    background-size: 90px;
+    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
+}
+
+#handicon:hover {
+	z-index: 500;
+	width: 100px;
+	height: 160px;
+	background-size: 100px;
+	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
+  	filter: drop-shadow(6px 6px 6px #f900b7);
+}
+
+#buynowicon {
+	width: 120px;
+	height: 60px;
+    background-image: url("buynow.png");
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: 110px;
+    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
+}
+
+#buynowicon:hover {
+	width:120px;
+	height: 90px;
+	background-size: 130px;
+	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
+  	filter: drop-shadow(6px 6px 6px #f900b7);
+}
 
 
 /*.center {*/
@@ -39,7 +271,7 @@ html {
 /*}*/
 
 .console-hands {
-    z-index: 10;
+    z-index: 100;
 	position: absolute;
 	 margin: auto;
      top: 0;
@@ -65,7 +297,7 @@ html {
 /*     background-color: pink;*/
 /*}     */
 .console-row {
-    z-index: 10;
+    z-index: 100;
     position: fixed;
      margin: auto;
      top: 0;
@@ -81,7 +313,7 @@ html {
 }
 
 .console-back{
-    z-index: 10;
+    z-index: 100;
     margin: auto;
 	left: 0;
 	bottom: 0;
@@ -99,6 +331,7 @@ html {
 }
 
 .console-back:hover {
+    z-index: 150;
     background-size: 95%;
     background-image: url(leftglow.png);
     -webkit-filter: drop-shadow(6px 6px 6px hotpink);
