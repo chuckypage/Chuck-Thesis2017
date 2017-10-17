@@ -45,12 +45,7 @@ html {
  
 /*}*/
 
-#canvas {
-   border-image-source: url(purpleframe.png);
-  border-image-slice: 19;
-  border-image-width: 19px;
-  border-image-inset: 19px; 
-}
+
 
 
 #maincanvas {
@@ -67,23 +62,33 @@ html {
   border-image-inset: 19px;
   
 }
-
+/*#maincanvas: hover {*/
+/*    z-index: 500;*/
+/*    -webkit-filter: drop-shadow(2px 2px 2px hotpink);*/
+/*}*/
 
 
 #secondcanvas {
+    /*z-index: 200;*/
      position: absolute;
      cursor: pointer;
      margin:0 auto;
      margin-top: 200px;
      margin-left: 100px;
      cursor: url(soap.png) 53 53, crosshair;
-     border-image-source: url(pinkframe.png);
+     border: 19px dotted #c905c6;
+     border-image-source: url(purpleframe.png);
      border-image-slice: 19;
      border-image-width: 19px;
      border-image-inset: 19px;
      
   
 }
+
+/*#secondcanvas: hover {*/
+/*    z-index: 500;*/
+/*    -webkit-filter: drop-shadow(2px 2px 2px hotpink);*/
+/*}*/
 
 a {
 	color: #f900b7;
