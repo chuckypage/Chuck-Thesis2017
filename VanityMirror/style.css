@@ -331,7 +331,7 @@ a.in_text:hover {
 }
 
 .console-back:hover {
-    z-index: 150;
+    z-index: 9050;
     background-size: 95%;
     background-image: url(leftglow.png);
     -webkit-filter: drop-shadow(6px 6px 6px hotpink);

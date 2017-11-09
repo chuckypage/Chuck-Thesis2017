@@ -360,6 +360,25 @@ a.in_text:hover {
 	/*font-style: italic;*/
 }
 
+#houseicon {
+    width: 100px;
+    height: 70px;
+    background-image: url("houseicon.png");
+	background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;
+    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
+}
+
+#houseicon:hover {
+	width:140px;
+	background-size: 100px;
+	height: 120px;
+	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
+  	filter: drop-shadow(6px 6px 6px #f900b7);
+	
+}
+
 #titicon {
 	width: 120px;
     height: 94px;
@@ -452,4 +471,45 @@ a.in_text:hover {
 	background-size: 130px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
+}
+
+#soapicon {
+    /*background-color: pink;*/
+    width: 120px;
+	height: 30px;
+    background-image: url("soapicon.png");
+	background-repeat: no-repeat;
+	padding-top: 20px;
+	background-position: center;
+    background-size: 70px;
+    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
+}
+
+#soapicon:hover {
+    width:120px;
+	height: 65px;
+	background-size: 85px;
+	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
+  	filter: drop-shadow(6px 6px 6px #f900b7);
+    
+}
+
+#antiageicon {
+    /*background-color: limegreen;*/
+    width: 120px;
+	height: 100px;
+    background-image: url("antiageicon.png");
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: 85px;
+    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
+}
+
+#antiageicon:hover {
+    width:120px;
+	height: 120px;
+	background-size: 100px;
+	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
+  	filter: drop-shadow(6px 6px 6px #f900b7);
+    
 }
