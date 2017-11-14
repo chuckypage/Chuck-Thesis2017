@@ -3,7 +3,9 @@ body {
 	margin-bottom: -1px;
 	margin-top: -1px;
 	/*overflow: visible;*/
+ 
 }
+
 
 html {
 
@@ -14,10 +16,11 @@ html {
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: 100% 100%;
-  
-  	
-  	
+ 
 }
+
+
+
 
 /** {*/
 /*  margin:0; padding:0;*/
@@ -54,7 +57,7 @@ html {
     margin:0 auto;
     margin-top: 100px;
     margin-left: 600px;
-    cursor: url(soap.png) 53 53, crosshair;
+    cursor: url(soap.png) 53 53, not-allowed;
    border: 19px dotted #c905c6;
   border-image-source: url(pinkframe.png);
   border-image-slice: 19;
@@ -75,7 +78,7 @@ html {
      margin:0 auto;
      margin-top: 200px;
      margin-left: 100px;
-     cursor: url(soap.png) 53 53, crosshair;
+     cursor: url(soap.png) 53 53, not-allowed;
      border: 19px dotted #c905c6;
      border-image-source: url(purpleframe.png);
      border-image-slice: 19;
@@ -92,7 +95,7 @@ html {
      margin:0 auto;
      margin-top: 600px;
      margin-left: 300px;
-     cursor: url(soap.png) 53 53, crosshair;
+     cursor: url(soap.png) 53 53, not-allowed;
      border: 19px dotted #c905c6;
      border-image-source: url(sparkleframe.gif);
      border-image-slice: 19;

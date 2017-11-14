@@ -1,3 +1,6 @@
+
+
+
 (function() {
 
 var image = { // back and front images
@@ -780,3 +783,4 @@ window.addEventListener('load', function() {
 }, false);
 
 })();
+

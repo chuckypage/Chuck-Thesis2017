@@ -14,9 +14,12 @@ html {
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: 100% 100%;
-  
-  	
-  	
+}
+
+
+
+.show{
+    display:block;   
 }
 
 a {
@@ -502,3 +505,7 @@ a.in_text:hover {
 /*.bg {*/
     
 /*}*/
+
+.hidden {
+    display: none;
+}

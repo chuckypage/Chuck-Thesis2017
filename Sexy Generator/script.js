@@ -65,4 +65,109 @@ function init() {
   });
   random_image(imagestwo);
 }
- });
+});
+ 
+ 
+$(document).ready(function(){
+var imagesthree = [ 
+  "watchone.png", 
+  "watchtwo.png",
+  "watchthree.png",
+  "cologneone.png",
+  "colognetwo.png",
+  "colognethree.png",
+];
+
+init();
+
+function random_image(imagesthree) {
+  var randomimg = randomize(imagesthree);
+  while(imagesthree[randomimg] === document.getElementById("imagethree").src){
+    randomimg = randomize(imagesthree)
+  }
+  document.getElementById("imagethree").src = imagesthree[randomimg].toString();
+}
+
+function randomize(array){
+  return Math.floor((Math.random() * (array.length)));
+}
+
+function init() {
+  document.getElementById("imagethree").addEventListener("click", function(){
+    random_image(imagesthree);
+  });
+  random_image(imagesthree);
+}
+});
+ 
+ 
+$(document).ready(function(){
+var imagesfour = [ 
+  "handcheek.png", 
+  "handchin.png",
+  "girlwater.png",
+  "feethand.png",
+  "faceribbon.png",
+  "handsone.png",
+];
+
+init();
+
+function random_image(imagesfour) {
+  var randomimg = randomize(imagesfour);
+  while(imagesfour[randomimg] === document.getElementById("imagefour").src){
+    randomimg = randomize(imagesfour)
+  }
+  document.getElementById("imagefour").src = imagesfour[randomimg].toString();
+}
+
+function randomize(array){
+  return Math.floor((Math.random() * (array.length)));
+}
+
+function init() {
+  document.getElementById("imagefour").addEventListener("click", function(){
+    random_image(imagesfour);
+  });
+  random_image(imagesfour);
+}
+});
+
+// var imageList = [
+//   "handcheek.png", 
+//   "handchin.png",
+//   "girlwater.png",
+//   "feethand.png",
+//   "faceribbon.png",
+//   "handsone.png",
+//   "watchone.png", 
+//   "watchtwo.png",
+//   "watchthree.png",
+//   "cologneone.png",
+//   "colognetwo.png",
+//   "colognethree.png",
+   
+// ];
+
+// function updateRandomImages() {
+//     var imageElements = $('img');
+//     $.each(imageElements, function(index, element) {
+//         displayRandomImage(element);
+//     });
+// }
+
+// function displayRandomImage(element) {
+//     var index = getRandomNumber(); 
+//     $(element).attr( 'src', imageList[index] );
+// }
+
+// function getRandomNumber() {
+//     return Math.floor(Math.random() * 10);
+// }
+
+// $('.sexybutton').click(function () {
+//     updateRandomImages();
+// });
+
+// //start off with some random images
+// updateRandomImages();

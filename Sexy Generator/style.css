@@ -6,7 +6,6 @@ body {
 }
 
 html {
-
     background-attachment: fixed;
 	background-image: url(redbg.png);
 	background-repeat: no-repeat;
@@ -14,27 +13,61 @@ html {
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: 100% 100%;
-  
-  	
   	
 }
 
-.title {
-     background-position: center;
-    /*border: 1px solid white;*/
-     width: 600px;
-    height: 100px;
-     position: fixed;
-     margin: auto;
-     margin-top: 20px;
-     right: 0;
-     left: 0;
-    background-image: url(youth.png);
-    background-repeat: no-repeat;
-    -webkit-filter: drop-shadow(0px 0px 8px #ffdd00);
+/*#wrapper {*/
+    
+   
+/*    max-width: 425px;*/
+/*}*/
+/* img {
+    width: 200px;
+    height: 150px;
+} */
+
+/*#img1 {*/
+/*    position: fixed;*/
+   
+/*     margin: auto;*/
+/*     top: 0;*/
+/*     right: 5;*/
+/*     bottom: 0;*/
+/*     left: 5;*/
+/*   width: 400px;*/
+/*    height: 250px;*/
+/*     margin-left: 50px;*/
+/*}*/
+
+/*#img2 {*/
+/*    position: fixed;*/
+/*     margin: auto;*/
+/*     top: 0;*/
+/*     right: 10;*/
+/*     bottom: 0;*/
+/*     left: 5;*/
+/*   width: 400px;*/
+/*    height: 250px;*/
+/*}*/
+
+
+
+/*.title {*/
+/*     background-position: center;*/
+/*    border: 1px solid white;*/
+/*     width: 600px;*/
+/*    height: 100px;*/
+/*     position: fixed;*/
+/*     margin: auto;*/
+/*     margin-top: 20px;*/
+/*     right: 0;*/
+/*     left: 0;*/
+/*    background-image: url(youth.png);*/
+/*    background-repeat: no-repeat;*/
+/*    -webkit-filter: drop-shadow(0px 0px 8px #ffdd00);*/
    /* -webkit-filter: drop-shadow(0px 10px 6px #d000ff);*/
   	/*filter: drop-shadow(0px 10px 6px #d000ff);*/
-}
+/*}*/
 
 .title:hover {
     -webkit-filter: drop-shadow(0px 0px 30px #ffdd00);
@@ -61,31 +94,9 @@ a.in_text:hover {
 }
 
 .sexybutton {
-    
     z-index: 20000;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    margin: auto;
-     top: 120;
-     right: 0;
-     bottom: 0;
-     left: 0;
-     background-position: center;
-     background-size: 70%;
-     background-image: url(sexybutton.png);
-     background-repeat: no-repeat;
-}
-
-.sexybutton:hover{
-    background-size: 60%;
-     -webkit-filter: drop-shadow(2px 2px 2px black);
-    
-}
-
-.generatorone{
-    width: 500px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     position: fixed;
     margin: auto;
      top: 0;
@@ -93,12 +104,39 @@ a.in_text:hover {
      bottom: 0;
      left: 0;
      background-position: center;
-      -webkit-filter: drop-shadow(2px 2px 2px black);
+     background-size: 100%;
+     background-image: url(gobig.png);
+     background-repeat: no-repeat;
+     filter:saturate(2) drop-shadow(2px 2px 2px black);
+}
+
+.sexybutton:hover{
+    background-image: url(gosmall.png);
+    cursor: pointer;
+    background-size: 100%;
+      filter:saturate(2) drop-shadow(0px 0px 8px red) drop-shadow(2px 2px 2px black);
+    
+}
+
+
+
+.generatorone{
+   
+    display: inline-block;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    position: fixed;
+    margin: auto;
+    margin-left: 120px;
+    margin-top: 60px;
+    background-position: center;
+    -webkit-filter: drop-shadow(2px 2px 2px black);
 
 }
 
 .generatorone:hover {
-    	-webkit-filter: drop-shadow(0px 0px 8px red);
+    -webkit-filter: drop-shadow(0px 0px 8px red);
 }
 
 .generatortwo{
@@ -106,24 +144,53 @@ a.in_text:hover {
     height: 500px;
     position: fixed;
     margin: auto;
-     top: 0;
-     right: 0;
-     bottom: 0;
-     left: 0;
-     background-size: 50%;
-     background-position: center;
-     -webkit-filter: drop-shadow(2px 2px 2px black);
+    display: inline-block;
+    margin-left: 120px;
+    margin-top: 60px;
+    background-size: 50%;
+    background-position: center;
+    -webkit-filter: drop-shadow(2px 2px 2px black);
 }
 
 .generatortwo:hover {
-    	-webkit-filter: drop-shadow(0px 0px 8px red);
+	-webkit-filter: drop-shadow(0px 0px 8px red);
+}
+
+.generatorthree{
+    width: 400px;
+    height: 500px;
+    position: fixed;
+    top: 50px;
+    margin: auto;
+    margin-left: 900px;
+    margin-top: 40px;
+    background-size: 20%;
+    -webkit-filter: drop-shadow(2px 2px 2px black);
+}
+
+.generatorthree:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px red);
+}
+
+.generatorfour{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    margin: auto;
+    margin-left: 980px;
+    margin-top: 70px;
+    background-size: 20%;
+    background-position: center;
+    -webkit-filter: drop-shadow(2px 2px 2px black);
+}
+
+.generatorfour:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px red);
 }
 
 
 
-/*.generatortwo{*/
-    
-/*}*/
+
 
 
 #info {
