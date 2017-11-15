@@ -308,7 +308,7 @@ a.in_text:hover {
 	background-repeat: no-repeat;
     background-size: 150px;
     /*-webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;*/
-    z-index: 9800000;
+    z-index: 9800000; 
 }
 
 .play:hover {
