@@ -1,3 +1,24 @@
+$('#titicon').click(function () {
+    window.location = 'https://chuckypage.github.io/Chuck-Thesis2017/HornyBoys/index.html';
+});
+
+
+$('#strippericon').click(function () {
+    window.location = 'https://chuckypage.github.io/Chuck-Thesis2017/Dreamhouse/index.html';
+});
+
+$('#fileicon').click(function () {
+    window.location = 'https://chuckypage.github.io/Chuck-Thesis2017/ReadMe/index.html';
+});
+
+$('#handicon').click(function () {
+    window.location = 'https://chuckypage.github.io/Chuck-Thesis2017/VanityMirror/index.html';
+});
+
+$('#buynowicon').click(function () {
+    window.location = 'http://chuckypage.github.io/coreinteraction-studio-CHUCK/project3/index.html';
+});
+
 
 
 
