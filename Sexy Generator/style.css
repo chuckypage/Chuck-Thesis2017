@@ -75,20 +75,20 @@ html {
 }
 
 a {
-	color: #f900b7;
+	text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+	background: -webkit-linear-gradient(top, #fc0071, lightpink);
+	background: linear-gradient(top, #fc0071, lightpink);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
     text-decoration: none;
 }
 
 a.in_text {
-
-	color: #f900b7;
     text-decoration: none;
     -webkit-filter: drop-shadow(2px 2px 2px hotpink);
 }
 
 a.in_text:hover {
-
-	color: purple;
     text-decoration: none;
     -webkit-filter: drop-shadow(2px 2px 2px hotpink);
 }
@@ -231,10 +231,9 @@ a.in_text:hover {
 .info_content {
     padding-top: 10px;
     padding-left: 100px;
-    color: #001df9;
+    color: white;
     display: none;
     font-family: sans-serif;
-    font-style: s;
     font-size: 24px;
     width:300px;
     -webkit-filter: drop-shadow(0px 0px 2px white);
@@ -277,10 +276,9 @@ a.in_text:hover {
     display: table;
     height: 100%;
     width: 2%;
-     z-index: 800050;
-   margin-top: 900px;
+    z-index: 800050;
+    margin-top: 900px;
     padding-top: 60px;
-   
 }
 
 .dropdown {
@@ -295,7 +293,11 @@ a.in_text:hover {
 /*}*/
 
 .dropdown-content {
-    /*background-color: grey;*/
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+	background: -webkit-linear-gradient(top, #fc0071, lightpink);
+	background: linear-gradient(top, #fc0071, lightpink);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
     display: table-cell;
     vertical-align: middle;
     visibility:hidden;
@@ -312,6 +314,7 @@ a.in_text:hover {
     text-align: center;
     font-size: 24px;
     font-family: 'Shrikhand', cursive;
+    line-height: 85%;
 }
 
 #houseicon {
@@ -325,12 +328,11 @@ a.in_text:hover {
 }
 
 #houseicon:hover {
-	width:140px;
+	width: 140px;
 	background-size: 100px;
 	height: 120px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
-	
 }
 
 #titicon {

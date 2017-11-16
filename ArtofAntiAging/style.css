@@ -124,7 +124,7 @@ a.in_text:hover {
 
 .a {
   transform: rotateY(0deg) translateZ(250px);
-  /*background: #ed1c24;*/
+  background: #ff009d;
   background-image:url(antiage1.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -136,97 +136,104 @@ a.in_text:hover {
 
 .b {
   transform: rotateY(60deg) translateZ(250px);
-  background: #0072bc;
+  background: #ff009d;
   background-image:url(antiage2.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .c {
   transform: rotateY(120deg) translateZ(250px);
-  background: #39b54a;
+  background: #ff009d;
   background-image:url(antiage3.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .d {
   transform: rotateY(180deg) translateZ(250px);
-  background: #f26522;
+  background: #ff009d;
   background-image:url(antiage4.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .e {
   transform: rotateY(240deg) translateZ(250px);
-  background: #630460;
+  background: #ff009d;
   background-image:url(antiage5.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 } 
 .f {
   transform: rotateY(300deg) translateZ(250px);
-  background: #8c6239;
+  background: #ff009d;
   background-image:url(antiage6.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .g {
   transform: rotateY(370deg) translateZ(250px);
-  background: #8c6239;
+  background: #ff009d;
   background-image:url(antiage6.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .h {
   transform: rotateY(deg) translateZ(250px);
-  background: #8c6239;
+  background: #ff009d;
   background-image:url(antiage6.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .i {
   transform: rotateY(300deg) translateZ(250px);
-  background: #8c6239;
+  background: #ff009d;
   background-image:url(antiage6.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .j {
   transform: rotateY(300deg) translateZ(250px);
-  background: #8c6239;
+  background: #ff009d;
   background-image:url(antiage6.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .k {
   transform: rotateY(300deg) translateZ(250px);
-  background: #8c6239;
+  background: #ff009d;
   background-image:url(antiage6.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .l {
   transform: rotateY(300deg) translateZ(250px);
-  background: #8c6239;
+  background: #ff009d;
   background-image:url(antiage6.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .next, .prev {
-    margin-top: 150px;
-  color: Black;
+  font-family: 'Shrikhand', cursive;
+  margin-top: 150px;
+  color: #ffdd00;
   position: absolute;
   top: 100px;
   padding: 1em 2em;
   cursor: pointer;
-  background: hotpink;
+  background-color: hotpink;
   border-radius: 5px;
-  border-top: 1px solid hotpink;
+  border-top: 1px solid lightpink;
   box-shadow: 0 5px 0 #d81c80;
   transition: box-shadow 0.1s, top 0.1s;
    -webkit-filter: drop-shadow(0px 0px 8px #ffdd00);
+   text-shadow: 2px 2px 4px #000000;
+   letter-spacing: 1.5px;
+ 
 }
-.next:hover, .prev:hover { color: #000;
+   
+
+.next:hover, .prev:hover { color: #ffdd00;
+text-shadow:  0px 3px 3px, black;
     -webkit-filter: drop-shadow(0px 0px 30px #ffdd00);
     
 }
@@ -279,15 +286,29 @@ a.in_text:hover {
 }
 
 .info_content {
-    padding-top: 10px;
-    padding-left: 100px;
-    color: #001df9;
+     text-align: left center;
+    padding-top: 1px;
+    padding-top: 8px;
+    padding-left: 90px;
+    color: #fffa00;
     display: none;
+     margin-top: 110px;
+    right: 20px;
+	bottom:30px;
+    overflow: hidden;
+    height: 100px;
+    display: none;
+    line-height: 98%;
     font-family: sans-serif;
-    font-style: s;
-    font-size: 24px;
-    width:300px;
-    -webkit-filter: drop-shadow(0px 0px 2px white);
+    font-size: 92%;
+    width:200px;
+    height: 100px;
+    text-shadow:  0px 3px 3px, black;
+   -webkit-filter: drop-shadow(0px 2px 2px black);
+    transform: scaleY(2.3) scaleX(1) rotate(-4deg);
+    letter-spacing: 1.5px;    
+     -ms-transform: scaleY(2.3) scaleX(1) rotate(-4deg); /* IE 9 */
+    -webkit-transform:scaleY(2.3) scaleX(1)  rotate(-4deg); /* Chrome, Safari, Opera */
 
 
 }
