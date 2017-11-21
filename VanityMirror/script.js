@@ -144,3 +144,4 @@ $('#antiageicon').click(function () {
 $('#houseicon').click(function () {
     window.location = 'http://chuckypage.github.io/coreinteraction-studio-CHUCK/project3/index.html';
 });
+

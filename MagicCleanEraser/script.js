@@ -219,6 +219,34 @@ function setupCanvases() {
 	function mouseup_handler(e) {
 		if (mouseDown) {
 			mouseDown = false;
+		var can = canvas.draw;
+        var ctx = can.getContext('2d');
+				var pixels = ctx.getImageData(0, 0, can.width, can.height);
+        var pdata = pixels.data;
+        
+        var notBlack = 0;
+        for (var i = 0; i < pdata.length; i += 4) {
+        	var r = pdata[i];
+          var g = pdata[i + 1];
+          var b = pdata[i + 2];
+          var a = pdata[i + 3];
+          
+          if (r != 0 || g !== 0 || b != 0 || a != 0) {
+          	++notBlack;
+          }
+        }
+        
+        console.log(notBlack, pdata.length / 4);
+        console.log(notBlack / (pdata.length / 4));
+        
+        var percentage = notBlack / (pdata.length / 4);
+        
+        if (percentage > .5) {
+        	
+        	// play sound 
+        }
+
+		
 			if (e.cancelable) { e.preventDefault(); } 
 			return false;
 		}
@@ -483,6 +511,8 @@ function setupCanvases() {
 			if (e.cancelable) { e.preventDefault(); } 
 			return false;
 		}
+		
+		
 
 		return true;
 	};

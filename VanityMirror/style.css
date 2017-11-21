@@ -39,7 +39,7 @@ a.in_text:hover {
 }
 
 #info {
-    /*border: 1px solid black;*/
+    /*border: 1px solid black;*/ 
 	position:fixed;
 	right: 20px;
 	bottom:30px;
@@ -84,14 +84,14 @@ a.in_text:hover {
     padding-left: 90px;
     color: #fffa00;
     display: none;
-     margin-top: 120px;
+     margin-top: 115px;
     right: 20px;
 	bottom:30px;
+	font-family: sans-serif;
     overflow: hidden;
     height: 100px;
     display: none;
-    line-height: 98%;
-    font-family: sans-serif;
+    line-height: 99%;
     font-size: 95%;
     width:200px;
     height: 100px;
@@ -124,6 +124,7 @@ a.in_text:hover {
 }
 
 .play:hover {
+    cursor: pointer;
     z-index: 9800000;
     width: 160px;
 	background-size: 160px;
@@ -181,7 +182,7 @@ a.in_text:hover {
     text-align: center;
     font-size: 24px;
     font-family: 'Shrikhand', cursive;
-    line-height: 85%;
+    line-height: 89%;
 }
 
 #houseicon {
@@ -397,7 +398,7 @@ a.in_text:hover {
 }
 
 .console-back{
-    z-index: 100;
+    z-index: 999999999;
     margin: auto;
 	left: 0;
 	bottom: 0;
@@ -415,7 +416,8 @@ a.in_text:hover {
 }
 
 .console-back:hover {
-    z-index: 9050;
+    cursor: pointer;
+    z-index: 999999999;
     background-size: 95%;
     background-image: url(leftglow.png);
     -webkit-filter: drop-shadow(6px 6px 6px hotpink);
@@ -441,6 +443,7 @@ a.in_text:hover {
 }
 
 .console-forward:hover {
+    cursor: pointer ;
     background-image: url(rightglow.png);
     background-size: 95%;
  /*   width: 20%;*/
@@ -514,76 +517,4 @@ a.in_text:hover {
     display: block;
     /* overrides the previous style */
 }
-
-/*.one {*/
-    
-/*    background-position: center;*/
-/*    position: absolute;*/
-/*     margin: auto;*/
-/*     top: 0;*/
-/*     right: 0;*/
-/*     bottom: 0;*/
-/*     left: 0;*/
-/*     width: 700px;*/
-/*     height: 460px;*/
-    /*height: 100%;*/
-    /*width: 110%;*/
-/*    background-size: 110%;*/
-    /*border: 1px black solid;*/
-/*    background-repeat: no-repeat;*/
-/*    z-index: 5;*/
-/*    background-image: url(girl1.png);*/
-/*    filter:saturate(1.5);*/
-    
-    
-/*}*/
-
-/*.two {*/
-/*    display: none;*/
-/*    background-position: center;*/
-/*    position: absolute;*/
-/*     margin: auto;*/
-/*     top: 0;*/
-/*     right: 0;*/
-/*     bottom: 0;*/
-/*     left: 0;*/
-/*     width: 700px;*/
-/*     height: 500px;*/
-    /*height: 115%;*/
-    /*width: 115%;*/
-/*    background-size: 100%;*/
-/*    border: 1px black solid;*/
-/*    background-repeat: no-repeat;*/
-/*    z-index: 5;*/
-/*    background-image: url(girl2.png);*/
-/*    filter:saturate(1.5);*/
-    
-    
-/*}*/
-
-/*.three {*/
-/*    display: none;*/
-/*    background-position: center;*/
-/*    position: absolute;*/
-/*     margin: auto;*/
-/*     top: 0;*/
-/*     right: 0;*/
-/*     bottom: 0;*/
-/*     left: 0;*/
-/*     width: 700px;*/
-/*     height: 400px;*/
-    /*height: 100%;*/
-    /*width: 100%;*/
-/*    background-size: 110%;*/
-/*    border: 1px black solid;*/
-/*    background-repeat: no-repeat;*/
-/*    z-index: 5;*/
-/*    background-image: url();*/
-/*    filter:saturate(1.5);*/
-    
-    
-/*}*/
-/*.bg {*/
-    
-/*}*/
 
