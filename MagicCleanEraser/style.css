@@ -295,7 +295,7 @@ a.in_text:hover {
     position: fixed;
     width: 150px;
 	height: 50px;
-    background-image: url("playnow.png");
+    background-image: url("rightnav.png");
 	background-repeat: no-repeat;
     background-size: 150px;
 
@@ -309,6 +309,27 @@ a.in_text:hover {
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
   	z-index: 9800000;
+}
+
+.playback {
+    display: none;
+    position: fixed;
+    width: 150px;
+	height: 50px;
+    background-image: url("leftnav.png");
+	background-repeat: no-repeat;
+    background-size: 150px;
+    z-index: 9800000;
+}
+
+.playback:hover {
+    cursor: pointer;
+    z-index: 9800000;
+    width: 160px;
+	background-size: 160px;
+	height: 56px; 
+	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
+  	filter: drop-shadow(6px 6px 6px #f900b7);
 }
 
 #contents {

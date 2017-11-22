@@ -22,6 +22,7 @@
 <!--</div>-->
 
 <div class="playnow"></div>
+<div class="playback"></div>
 		<div id="contents">
 <div class="dropdown">
   <center><a href="#one"><div id="houseicon"><img src="" ></div></a></center>
@@ -279,8 +280,19 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.panzoom/2.0.6/jquery.panzoom.min.js"></script>
 
 	<script>
-    	    $('.playnow').on('click',function() {
+$('.playnow').on('click',function() {
+    $('.playback').fadeIn(900);
+    $('.playnow').fadeOut(900);
     if($('#contents').css('left')=='0px'){
+        $('#contents').animate({left: '-250px'}, 500);        
+    }else{
+        $('#contents').animate({left:0}, 500); 
+    }
+});
+    $('.playback').on('click',function() {
+       $('.playback').fadeOut(900);
+    $('.playnow').fadeIn(900); 
+     if($('#contents').css('left')=='0px'){
         $('#contents').animate({left: '-250px'}, 500);        
     }else{
         $('#contents').animate({left:0}, 500); 

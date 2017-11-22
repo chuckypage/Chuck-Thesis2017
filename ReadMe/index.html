@@ -25,6 +25,7 @@
     </div>
     	   		
 <div class="play"></div>
+<div class="playback"></div>
 		<div id="contents">
 
 <div class="dropdown">
@@ -670,14 +671,24 @@ artist as he-man or social outcast.
 	       <script type="text/javascript" src="script.js"></script>
     	
     	<script>
-    	    $('.play').on('click',function() {
+    $('.play').on('click',function() {
+    $('.playback').fadeIn(900);
+    $('.play').fadeOut(900);
     if($('#contents').css('left')=='0px'){
         $('#contents').animate({left: '-250px'}, 500);        
     }else{
         $('#contents').animate({left:0}, 500); 
     }
 });
-
+    $('.playback').on('click',function() {
+       $('.playback').fadeOut(900);
+    $('.play').fadeIn(900); 
+     if($('#contents').css('left')=='0px'){
+        $('#contents').animate({left: '-250px'}, 500);        
+    }else{
+        $('#contents').animate({left:0}, 500); 
+    }
+});
 
     	    
     	</script>

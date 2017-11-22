@@ -117,7 +117,7 @@ a.in_text:hover {
     position: fixed;
     width: 150px;
 	height: 50px;
-    background-image: url("playnow.png");
+    background-image: url("rightnav.png");
 	background-repeat: no-repeat;
     background-size: 150px;
     z-index: 9800000;
@@ -133,6 +133,29 @@ a.in_text:hover {
   	filter: drop-shadow(6px 6px 6px #f900b7);
 }
 
+
+.playback {
+    display: none;
+    position: fixed;
+    width: 150px;
+	height: 50px;
+    background-image: url("leftnav.png");
+	background-repeat: no-repeat;
+    background-size: 150px;
+    z-index: 9800000;
+}
+
+.playback:hover {
+    cursor: pointer;
+    z-index: 9800000;
+    width: 160px;
+	background-size: 160px;
+	height: 56px; 
+	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
+  	filter: drop-shadow(6px 6px 6px #f900b7);
+}
+
+
 #contents {
     /*border: 1px black solid;*/
     /*background-color: hotpink;*/
@@ -143,12 +166,14 @@ a.in_text:hover {
     height: 100%;
     z-index: 8000050;
     width: 2%;
-    margin-top: 900px;
+    margin-top: 100px;
     padding-top: 60px;
    
 }
 
 .dropdown {
+
+    
     display: table-row;
     text-align: center;
     -webkit-filter: drop-shadow(0px 2px 2px purple);
@@ -182,23 +207,25 @@ a.in_text:hover {
     text-align: center;
     font-size: 24px;
     font-family: 'Shrikhand', cursive;
-    line-height: 89%;
+    line-height: 85%;
 }
 
 #houseicon {
+    /*border: 1px solid black;*/
     width: 100px;
     height: 70px;
     background-image: url("houseicon.png");
 	background-repeat: no-repeat;
-    background-size: 70px;
+    background-size: 70px 75px;
     background-position: center;
     -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
 #houseicon:hover {
-	width: 140px;
-	background-size: 100px;
-	height: 120px;
+   
+	width: 110px;
+	background-size: 90px;
+	height: 100px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
 }
@@ -223,19 +250,20 @@ a.in_text:hover {
 }
 
 #strippericon {
+    /*border: 1px solid black;*/
 	width: 100px;
-	height: 100px;
+	height: 105px;
     background-image: url("stripper.png");
 	background-repeat: no-repeat;
-    background-size: 50px;
+    background-size: 60px;
     background-position: center;
     -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
 #strippericon:hover {
 	width: 120px;
-	height: 110px;
-	background-size: 60px;
+	height: 115px;
+	background-size: 69px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
 }
@@ -282,19 +310,19 @@ a.in_text:hover {
 
 #buynowicon {
 	width: 120px;
-	height: 20px;
+	height: 40px;
     background-image: url("buynow.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	padding-top: 30px;
-    background-size: 110px;
+    background-size: 110px 50px;
     -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
 #buynowicon:hover {
 	width:120px;
-	height: 40px;
-	background-size: 130px;
+	height: 60px;
+	background-size: 130px 70px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
 }
@@ -302,19 +330,19 @@ a.in_text:hover {
 #soapicon {
     /*background-color: pink;*/
     width: 120px;
-	height: 30px;
+	height: 40px;
     background-image: url("soapicon.png");
 	background-repeat: no-repeat;
 	padding-top: 20px;
 	background-position: center;
-    background-size: 70px;
+    background-size: 70px 60px;
     -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
 #soapicon:hover {
     width:120px;
-	height: 65px;
-	background-size: 85px;
+	height: 75px;
+	background-size: 95px 75px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
     

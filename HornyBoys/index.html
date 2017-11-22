@@ -53,6 +53,7 @@
 
 	</div>
 <div class="play"></div>
+<div class="playback"></div>
 		<div id="contents">
 
 <div class="dropdown">
@@ -207,8 +208,19 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 <script>
-    	    $('.play').on('click',function() {
+    $('.play').on('click',function() {
+    $('.playback').fadeIn(900);
+    $('.play').fadeOut(900);
     if($('#contents').css('left')=='0px'){
+        $('#contents').animate({left: '-250px'}, 500);        
+    }else{
+        $('#contents').animate({left:0}, 500); 
+    }
+});
+    $('.playback').on('click',function() {
+       $('.playback').fadeOut(900);
+    $('.play').fadeIn(900); 
+     if($('#contents').css('left')=='0px'){
         $('#contents').animate({left: '-250px'}, 500);        
     }else{
         $('#contents').animate({left:0}, 500); 
