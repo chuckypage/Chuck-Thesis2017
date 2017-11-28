@@ -20,11 +20,13 @@ html {
 }
 
 #cursor {
-	z-index: 800000;
+	z-index: 8999900000;
  	cursor: none !important;
 	width: 270px;
   	height: 240px;
   	position: absolute;
+  	margin-top: -30px;
+  	margin-left: -40px;
     background-size: 100px 100px;
     background-repeat: no-repeat;
     background-image: url(flame.gif);
@@ -113,7 +115,7 @@ a.in_text:hover {
     position: fixed;
     width: 150px;
 	height: 50px;
-    background-image: url("playnow.png");
+    background-image: url("rightnav.png");
 	background-repeat: no-repeat;
     background-size: 150px;
     /*-webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;*/
@@ -194,12 +196,31 @@ a.in_text:hover {
 	/*font-style: italic;*/
 }
 
+#houseicon {
+    width: 100px;
+    height: 70px;
+    background-image: url("houseicon.png");
+	background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;
+    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
+}
+
+#houseicon:hover {
+
+	width: 100px;
+	background-size: 90px;
+	height: 120px;
+	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
+  	filter: drop-shadow(6px 6px 6px #f900b7);
+}
+
 #titicon {
 	width: 120px;
     height: 94px;
     background-image: url("boob.png");
 	background-repeat: no-repeat;
-    background-size: 100px;
+    background-size: 90px;
     background-position: center;
     -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
@@ -207,7 +228,7 @@ a.in_text:hover {
 #titicon:hover {
 	width:140px;
 	background-size: 120px;
-	height: 120px;
+	height: 110px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
 	
@@ -215,18 +236,18 @@ a.in_text:hover {
 
 #strippericon {
 	width: 100px;
-	height: 150px;
+	height: 100px;
     background-image: url("stripper.png");
 	background-repeat: no-repeat;
-    background-size: 70px;
+    background-size: 50px;
     background-position: center;
     -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
 #strippericon:hover {
 	width: 120px;
-	height: 170px;
-	background-size: 90px;
+	height: 110px;
+	background-size: 60px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
 }
@@ -236,8 +257,10 @@ a.in_text:hover {
 	height: 75px;
     background-image: url("run.gif");
 	background-repeat: no-repeat;
+	/*margin-left: 20px;*/
     background-size: 60px;
     background-position: center;
+    margin-top: 8px;
     -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
@@ -253,39 +276,85 @@ a.in_text:hover {
 #handicon {
     z-index: 20;
 	width: 100px;
-	height: 150px;
+	height: 105px;
 	background-position: center;
     background-image: url("flowerhand.png");
 	background-repeat: no-repeat;
-    background-size: 90px;
+    background-size: 70px;
+    margin-top: 10px;
     -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
 #handicon:hover {
 	z-index: 500;
 	width: 100px;
-	height: 160px;
-	background-size: 100px;
+	height: 120px;
+	background-size: 85px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
 }
 
 #buynowicon {
+    /*border: 1px solid black;*/
 	width: 120px;
-	height: 60px;
+	height: 15px;
     background-image: url("buynow.png");
 	background-repeat: no-repeat;
+	margin-top: 5px;
 	background-position: center;
-    background-size: 110px;
+	padding-top: 40px;
+    background-size: 110px 50px;
     -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
 #buynowicon:hover {
 	width:120px;
-	height: 90px;
-	background-size: 130px;
+	height: 40px;
+	background-size: 130px 70px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
+}
+
+#soapicon {
+    /*border: 1px black solid;*/
+    /*background-color: pink;*/
+    width: 120px;
+	height: 35px;
+    background-image: url("soapicon.png");
+	background-repeat: no-repeat;
+	padding-top: 20px;
+	background-position: center;
+    background-size: 70px;
+    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
+}
+
+#soapicon:hover {
+    width:120px;
+	height: 50px;
+	background-size: 85px;
+	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
+  	filter: drop-shadow(6px 6px 6px #f900b7);
+    
+}
+
+#antiageicon {
+    /*background-color: limegreen;*/
+    width: 120px;
+	height: 100px;
+    background-image: url("antiageicon.png");
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: 85px;
+    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
+}
+
+#antiageicon:hover {
+    width:120px;
+	height: 120px;
+	background-size: 100px;
+	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
+  	filter: drop-shadow(6px 6px 6px #f900b7);
+    
 }
 
 

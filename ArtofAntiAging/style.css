@@ -561,6 +561,7 @@ text-shadow:  0px 3px 3px, black;
 }
 
 #antiageicon {
+    border: 1px black solid;
     /*background-color: limegreen;*/
     width: 120px;
 	height: 100px;
