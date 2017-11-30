@@ -6,10 +6,10 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 
 $(document).ready(function(){
     $('.mainlogo').click(function(){
-        $('.mainlogo').hide();
-        $('.console').hide();
+        $('.mainlogo').fadeOut(3000);
+        $('.console').fadeOut(3000);
         // $('.buttonone').show();
-        $('.buttontwo').show();
+        $('.buttontwo').fadeIn(8000);
         // $('.titleft').show();
         // $('.titright').show();
         
@@ -97,6 +97,7 @@ $('.trigger').hover(
   $('.e').each(animateDiv);
   $('.f').each(animateDiv);
   $('.g').each(animateDiv);
+  $('#popuptwo').each(animateDiv);
 });
 
 function makeNewPosition(){
@@ -144,3 +145,89 @@ function calcSpeed(prev, next) {
 
 });
 
+$('#titicon').click(function () {
+    window.location = '../HornyBoys/index.html';
+});
+
+
+$('#strippericon').click(function () {
+    window.location = '../Dreamhouse/index.html';
+});
+
+$('#fileicon').click(function () {
+    window.location = '../ReadMe/index.html';
+});
+
+$('#handicon').click(function () {
+    window.location = '../VanityMirror/index.html';
+});
+
+$('#buynowicon').click(function () {
+    window.location = '../project3/index.html';
+});
+
+$('#soapicon').click(function () {
+    window.location = '../MagicCleanEraser/index.html';
+});
+
+$('#antiageicon').click(function () {
+    window.location = '../ArtofAntiAging/index.html';
+});
+
+$('#houseicon').click(function () {
+    window.location = '../project3/index.html';
+});
+    
+// $('.rand').click(function() {
+//   var bodyWidth = document.body.clientWidth
+//   var bodyHeight = document.body.clientHeight;
+//   var randPosX = Math.floor((Math.random()*bodyWidth));
+//   var randPosY = Math.floor((Math.random()*bodyHeight));
+//   var posLog = document.getElementById('pos_log');
+//   var posXY = 'x: ' + randPosX + '<br />' + 'y: ' + randPosY;
+  
+//   $('#rand_pos').css('left', randPosX);
+//   $('#rand_pos').css('top', randPosY);
+  
+//   posLog.innerHTML = posXY
+// });
+
+
+$(function(){
+	var fadeDelay = 1000;
+	var fadeDuration = 1000;
+    $(document).click(function(e){
+	var div = $('<div class="image-wrapper">')
+			.css({
+				"left": e.pageX + 'px',
+				"top": e.pageY + 'px'
+			})
+			.append($('<img src="" alt=" />'))
+			.appendTo(document.body);
+				
+// 	setTimeout(function() {
+// 			div.addClass('fade-out');			
+// 			setTimeout(function() { div.remove(); }, fadeDuration);
+// 		}, fadeDelay);
+    });
+});
+
+$(".pussy").click(function(){
+    $("#popup").css("display", "block");
+    $("#popuptwo").show();
+  });
+  $("#close_popuptwo").click(function(){
+    $("#popuptwo").css("display", "none");
+  });  
+
+  $("#close_popup").click(function(){
+    $("#popup").css("display", "none");
+  }); 
+  
+  $(".bible").click(function(){
+    $("#popupthree").show();
+  });
+  
+  $("#close_popupthree").click(function(){
+    $("#popupthree").css("display", "none");
+  }); 

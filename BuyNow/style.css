@@ -1,0 +1,411 @@
+body {
+	margin: -1px;
+	overflow: hidden;
+}
+
+body, html {
+	height: 100%;
+	position: relative;
+}
+
+.console {
+	/*background-color: green;*/
+	position: absolute;
+	top: 10%;
+	width: 60%;
+	height: 80%;
+	left: 20%;
+	z-index: 999;
+	cursor: move;
+}
+
+.console-img {
+	background-image: url(consolepurple2.png);
+	background-size: 110% 101%;
+	background-position: center;
+	background-repeat: no-repeat;
+	/*display: inline-block;*/
+	cursor: move;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/*image-rendering: auto;*/
+ /* 	image-rendering: crisp-edges;*/
+ /* 	image-rendering: pixelated;*/
+  	-webkit-filter: drop-shadow(0px 0px 8px black);
+}
+ 
+.console-figure-panel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 50%;
+	bottom: 0;
+	height: 100%;
+	/*background-color: red;*/
+}
+
+.console-figure {
+	cursor: move;
+	display: none;
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	right: 10%;
+	bottom: 10%;
+	/*border: 1px solid black;*/
+	background-size: 105%;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-filter: brightness(110%) saturate(1.7) drop-shadow(0px 0px 8px rgb(255, 30, 228));
+}
+
+.console-figure-1 {
+	background-image: url(figurefour7.png);
+}
+
+.console-figure-2 {
+	background-image: url(figurefour6.png);
+}
+
+.console-figure-3 {
+	background-image: url(figurefour5.png);
+}
+
+.console-figure-4 {
+	background-image: url(figurefour4.png);
+}
+
+.console-figure-5 {
+	background-image: url(figurefour3.png);
+}
+
+.console-figure-6 {
+	background-image: url(figurefour2.png);
+}
+
+.console-figure-7 {
+	background-image: url(figurefour1.png);
+}
+
+
+
+.console-figuretwo {
+	cursor: move;
+	display: none;
+	position: absolute;
+	top: 10%;
+	left: 25%;
+	right: 10%;
+	bottom: 10%;
+	/*border: 1px solid blue;*/
+	background-size: 77%;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-filter: saturate(2) drop-shadow(0px 0px 8px rgb(2, 255, 19));
+}
+
+.console-figure-9 {
+	background-image: url(lady7.png);
+}
+
+.console-figure-10 {
+	background-image: url(lady6.png);
+}
+.console-figure-11 {
+	background-image: url(lady5.png);
+}
+.console-figure-12 {
+	background-image: url(lady4.png);
+}
+.console-figure-13 {
+	background-image: url(lady3.png);
+}
+.console-figure-14 {
+	background-image: url(lady2.png);
+}
+.console-figure-15 {
+	background-image: url(lady.png);
+}
+
+.console-figurethree {
+	cursor: move;
+	display: none;
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	right: 10%;
+	bottom: 10%;
+	/*border: 1px solid blue;*/
+	background-size: 61% 92%;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-filter: saturate(2) drop-shadow(0px 0px 8px rgb(56, 142, 255));
+}
+
+.console-figure-16 {
+	background-image: url(handy8.png);
+}
+.console-figure-17 {
+	background-image: url(handy7.png);
+}
+.console-figure-18 {
+	background-image: url(handy6.png);
+}
+.console-figure-19 {
+	background-image: url(handy5.png);
+}
+.console-figure-20 {
+	background-image: url(handy4.png);
+}
+.console-figure-21 {
+	background-image: url(handy3.png);
+}
+.console-figure-22 {
+	background-image: url(handy2.png);
+}
+.console-figure-23 {
+	display: inline;
+	background-image: url(handy.png);
+}
+
+
+.console-controls {
+	position: absolute;
+	/*background-color: pink;*/
+	right: 15%;
+	bottom: 5%;
+	width: 30%;
+	height: 80%;
+}
+
+.console-row {
+	display: flex;
+	justify-content: space-around;
+	/*border: 1px yellow solid;*/
+	/*background-color: black;*/
+
+}
+
+.console-playforward {
+	cursor: pointer;
+	left: 40%;
+	bottom: 10%;
+	width: 200%;
+	height: 10%;
+	background-image: url(playforwardshadow.png);
+	/*border: 1px solid black;*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+.console-playforward:hover {
+	transform: scale(.9,.9);
+	background-image: url(playforward.png);
+}
+
+.console-playback {
+	cursor: pointer;
+	left: 10%;
+	bottom: 10%;
+	width: 200%;
+	height: 10%;
+	background-image: url(playbackshadow.png);
+	/*border: 1px solid black;*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.console-playback:hover {
+	transform: scale(.9,.9);
+	background-image: url(playback.png);
+}
+
+.console-plus {
+	cursor: pointer;
+	/*border: black solid 1px;*/
+	width: 30%;
+	height: 20%;
+	left: 45%;
+	bottom: 20%;
+	background-image: url(plus.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.console-plus:hover {
+	background-image: url(plusshadow.png);
+}
+
+.console-minus {
+	cursor: pointer;
+	/*border: black solid 1px;*/
+	width: 30%;
+	height: 20%;
+	left: 15%;
+	bottom: 20%;
+	background-image: url(minus.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+.console-minus:hover {
+	background-image: url(minusshadow.png);
+}
+
+.console-forward {
+	cursor: pointer;
+	/*border: black solid 1px;*/
+	width: 40%;
+	height: 20%;
+	left: 50%;
+	bottom: 32%;
+	background-image: url(forwardshadow.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.console-forward:hover {
+	transform: scale(.9,.9);
+	background-image: url(forward.png);
+}
+
+.console-back {
+	cursor: pointer;
+	/*border: black solid 1px;*/
+	width: 40%;
+	height: 20%;
+	left: 10%;
+	bottom: 32%;
+	background-image: url(backshadow.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.console-back:hover {
+	transform: scale(.9,.9);
+	background-image: url(back.png);
+
+}
+
+.buybutton {
+	border: 1px black solid;
+	cursor: pointer;
+	/*border: black solid 1px;*/
+	width: 60%;
+	height: 10%;
+	left: 10%;
+	bottom: 50%;
+	background-image: url(buynow.png);
+	background-size: 100% 130%;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+
+
+.bg {
+	height: 100%;
+	z-index: 1;
+	background-repeat: no-repeat;
+	width: 100%;
+	position: absolute;
+	webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.fire {
+	
+	background-image: url(fire.jpg);
+	background-size: 150rem;
+}
+
+.morning {
+	background-image: url(morning.jpg);
+	background-size: 120rem;
+	
+}
+
+.swoosh {
+	background-image: url(swoosh.jpg);
+	background-size: 120rem;
+}
+
+.birds {
+	background-image: url(birds.jpg);
+	background-size: 120rem;
+}
+
+.beach {
+	background-image: url(beach.jpg);
+	background-size: 120rem;
+	background-position: 40%;
+}
+
+.edge {
+	background-image: url(edge.jpg);
+	background-size: 120rem;
+}
+
+.cliff {
+	background-image: url(cliff.jpeg);
+	filter:saturate(3);
+	-webkit-filter: saturate(3);
+}
+
+.fish {
+	background-image: url(fish.jpeg);
+	filter:saturate(3);
+	-webkit-filter: saturate(3);
+}
+
+.butterfly {
+	background-image: url(butterfly.jpg);
+	filter:saturate(3);
+	-webkit-filter: saturate(3);
+}
+
+.field {
+	background-image: url(field.jpeg);
+	filter:saturate(3);
+	-webkit-filter: saturate(3);
+}
+
+
+
+.audio {
+	/*display: none;*/
+	z-index: 4;
+	position: absolute;
+	margin-left: 10%;
+	margin-top: 43%;
+}
+
+@-webkit-keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
