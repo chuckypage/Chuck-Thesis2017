@@ -19,16 +19,56 @@ html {
   	background-size: cover;
 }
 
-.image-wrapper {
+.image {
 	margin-left: 200px;
-  width: 300px;
-  height: 180px;
-  background-image: url(wild.png);
 	position: absolute;
 	transform: translate(-50%, -50%);
     opacity: 1;
     background-repeat: no-repeat;
 }
+
+.wrapper {
+  width: 300px;
+  height: 180px;
+  background-image: url(wild.png);
+
+}
+
+.wrappertwo {
+  width: 300px;
+  height: 180px;
+  background-image: url(see.png);
+
+}
+
+.wrapperthree {
+  width: 300px;
+  height: 180px;
+  background-image: url(teens.png);
+
+}
+
+.wrapperfour {
+  width: 300px;
+  height: 180px;
+  background-image: url(tarts.png);
+
+}
+
+.wrapperfive {
+  width: 300px;
+  height: 180px;
+  background-image: url(wet.png);
+
+}
+
+.wrappersix {
+  width: 300px;
+  height: 180px;
+  background-image: url(clickforboobs.png);
+
+}
+
 
 .image-wrapper.fade-out {
 	opacity: 0;
@@ -404,19 +444,19 @@ a.in_text:hover {
 
 .dropdown-content {
     /*background-color: grey;*/
-    display: table-cell;
+    display: none;
     vertical-align: middle;
-    visibility:hidden;
     opacity:0;
     transition:opacity 0.2s linear;
 }
 
 .dropdown:hover .dropdown-content {
-	visibility: visible;
+	display: table-cell;
      opacity: 1;
 
 }
 .contents_link {
+	
     text-align: center;
     font-size: 24px;
  /*   font-family: "Stanley", Times, serif;*/

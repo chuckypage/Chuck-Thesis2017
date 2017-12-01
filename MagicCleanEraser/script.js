@@ -241,11 +241,10 @@ function setupCanvases() {
         
         var percentage = notBlack / (pdata.length / 4);
         
-        if (percentage > .5) {
-        	
-        	// play sound 
+        if (percentage > .5) { 
+        console.log('Testing console');
+  
         }
-
 		
 			if (e.cancelable) { e.preventDefault(); } 
 			return false;

@@ -85,7 +85,7 @@ $('.trigger').hover(
             pointerEvents: 'none'
 
 	});
-	
+	 
 	
 	
 	
@@ -194,21 +194,28 @@ $('#houseicon').click(function () {
 
 
 $(function(){
+    var list = [ 
+    "wrapper", 
+    "wrappertwo", 
+    "wrapperthree", 
+    "wrapperfour", 
+    "wrapperfive", 
+    "wrappersix"
+        ]
 	var fadeDelay = 1000;
 	var fadeDuration = 1000;
     $(document).click(function(e){
-	var div = $('<div class="image-wrapper">')
+        var randomNumber = Math.random();
+        var randomWithinArrayLength = randomNumber * list.length;
+        var randomArrayIndex = Math.floor(randomWithinArrayLength);
+        var randomElement = list[randomArrayIndex];
+        setTimeout(function() {
+	    var div = $('<div class="image '+ randomElement +'">')
 			.css({
 				"left": e.pageX + 'px',
 				"top": e.pageY + 'px'
 			})
-			.append($('<img src="" alt=" />'))
-			.appendTo(document.body);
-				
-// 	setTimeout(function() {
-// 			div.addClass('fade-out');			
-// 			setTimeout(function() { div.remove(); }, fadeDuration);
-// 		}, fadeDelay);
+			.appendTo(document.body);}, 30000);
     });
 });
 

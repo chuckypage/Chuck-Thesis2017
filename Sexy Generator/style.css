@@ -69,17 +69,13 @@ html {
   	/*filter: drop-shadow(0px 10px 6px #d000ff);*/
 /*}*/
 
-.title:hover {
-    -webkit-filter: drop-shadow(0px 0px 30px #ffdd00);
+/*.title:hover {*/
+/*    -webkit-filter: drop-shadow(0px 0px 30px #ffdd00);*/
     
-}
+/*}*/
 
 a {
-	text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-	background: -webkit-linear-gradient(top, #fc0071, lightpink);
-	background: linear-gradient(top, #fc0071, lightpink);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	
     text-decoration: none;
 }
 
@@ -296,10 +292,11 @@ a.in_text:hover {
     left: -80px;
     display: table;
     height: 100%;
+    z-index: 8000050;
     width: 2%;
-    z-index: 800050;
     margin-top: 900px;
     padding-top: 60px;
+   
 }
 
 .dropdown {
@@ -314,28 +311,29 @@ a.in_text:hover {
 /*}*/
 
 .dropdown-content {
-    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+     text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
 	background: -webkit-linear-gradient(top, #fc0071, lightpink);
 	background: linear-gradient(top, #fc0071, lightpink);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-    display: table-cell;
+    /*background-color: grey;*/
     vertical-align: middle;
-    visibility:hidden;
-    opacity:0;
+    display: none;
+    opacity: 0;
     transition:opacity 0.2s linear;
 }
 
 .dropdown:hover .dropdown-content {
-	visibility: visible;
+	display: table-cell;
      opacity: 1;
 
 }
 .contents_link {
+    
     text-align: center;
     font-size: 24px;
     font-family: 'Shrikhand', cursive;
-    line-height: 85%;
+    line-height: 89%;
 }
 
 #houseicon {
@@ -349,8 +347,8 @@ a.in_text:hover {
 }
 
 #houseicon:hover {
-	width: 140px;
-	background-size: 100px;
+	width: 100px;
+	background-size: 90px;
 	height: 120px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
@@ -398,13 +396,14 @@ a.in_text:hover {
 	height: 75px;
     background-image: url("run.gif");
 	background-repeat: no-repeat;
+	/*margin-left: 20px;*/
     background-size: 60px;
     background-position: center;
+    margin-top: 8px;
     -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
 #fileicon:hover {
-	
 	width: 70px;
 	height: 87px;
 	background-size: 70px;
@@ -420,6 +419,7 @@ a.in_text:hover {
     background-image: url("flowerhand.png");
 	background-repeat: no-repeat;
     background-size: 70px;
+    margin-top: 10px;
     -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
@@ -433,28 +433,31 @@ a.in_text:hover {
 }
 
 #buynowicon {
+    /*border: 1px solid black;*/
 	width: 120px;
-	height: 20px;
+	height: 15px;
     background-image: url("buynow.png");
 	background-repeat: no-repeat;
+	margin-top: 5px;
 	background-position: center;
-	padding-top: 30px;
-    background-size: 110px;
+	padding-top: 40px;
+    background-size: 110px 50px;
     -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
 #buynowicon:hover {
 	width:120px;
 	height: 40px;
-	background-size: 130px;
+	background-size: 130px 70px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
 }
 
 #soapicon {
+    /*border: 1px black solid;*/
     /*background-color: pink;*/
     width: 120px;
-	height: 30px;
+	height: 35px;
     background-image: url("soapicon.png");
 	background-repeat: no-repeat;
 	padding-top: 20px;
@@ -465,12 +468,13 @@ a.in_text:hover {
 
 #soapicon:hover {
     width:120px;
-	height: 65px;
+	height: 50px;
 	background-size: 85px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
     
 }
+
 
 #antiageicon {
     /*background-color: limegreen;*/
@@ -491,3 +495,4 @@ a.in_text:hover {
   	filter: drop-shadow(6px 6px 6px #f900b7);
     
 }
+

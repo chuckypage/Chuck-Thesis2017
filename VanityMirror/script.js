@@ -21,11 +21,11 @@
 // window.speechSynthesis.speak(utterance);
 
 
-// var msg = new SpeechSynthesisUtterance('Woman should show skin but not so much it looks trashy. Woman should wear makeup but not too much. It is attractive when women eat a lot but can still remain thin! It is attractive when women can eat as much as men. We like when women have big tits and big ass but a skinny waist. Wear sexy lingerie once and a while. Woman should have good manners and be ladylike, but also be able to hang. women should shave regularly or be waxed. women should have smaller waste. Fat women are ugly and unhealthy so take care of yourself! women should try and be less emotional. We can tell when women let go of themselves and it is not attractive. a woman should dress sexy and look sexy. Women should look put togehter and be hygienic. Women should know when it is time to stop talking. The more you can look like a white woman, the prettier you are. White is Beautiful. Being black is fine as long as you have lighter skin, straightened hair, and eurocentric facial features. women should not be shy in bed but not be too crazy. a woman should know how to cook. Do not wear uncomfortable shoes. Lighter eyes are way more desireable. Do not be overly eager. you women are taking this feminism thing too far no one likes angry women but everone likes bubbly women. Women should wear a bra and dress modestly if they do not want to be approached. Women should be nurturing but not too emotional.');
-// 	msg.rate = .8; // 0.1 to 10
-//   msg.pitch = 0; //0 to 2
-// 	msg.lang = "english";
-// window.speechSynthesis.speak(msg);
+var msg = new SpeechSynthesisUtterance('Woman should show skin but not so much it looks trashy. Woman should wear makeup but not too much. It is attractive when women eat a lot but can still remain thin! It is attractive when women can eat as much as men. We like when women have big tits and big ass but a skinny waist. Wear sexy lingerie once and a while. Woman should have good manners and be ladylike, but also be able to hang. women should shave regularly or be waxed. women should have smaller waste. Fat women are ugly and unhealthy so take care of yourself! women should try and be less emotional. We can tell when women let go of themselves and it is not attractive. a woman should dress sexy and look sexy. Women should look put togehter and be hygienic. Women should know when it is time to stop talking. The more you can look like a white woman, the prettier you are. White is Beautiful. Being black is fine as long as you have lighter skin, straightened hair, and eurocentric facial features. women should not be shy in bed but not be too crazy. a woman should know how to cook. Do not wear uncomfortable shoes. Lighter eyes are way more desireable. Do not be overly eager. you women are taking this feminism thing too far no one likes angry women but everone likes bubbly women. Women should wear a bra and dress modestly if they do not want to be approached. Women should be nurturing but not too emotional.');
+	msg.rate = .8; // 0.1 to 10
+  msg.pitch = 0; //0 to 2
+	msg.lang = "english";
+window.speechSynthesis.speak(msg);
 
 // var msg = new SpeechSynthesisUtterance('');
 // 	msg.rate = .4; // 0.1 to 10

@@ -18,11 +18,7 @@ html {
 
 
 a {
-    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-	background: -webkit-linear-gradient(top, #fc0071, lightpink);
-	background: linear-gradient(top, #fc0071, lightpink);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    
     text-decoration: none;
     /*text-align: center;*/
 }
