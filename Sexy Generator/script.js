@@ -134,36 +134,36 @@ function init() {
 });
 
 $('#titicon').click(function () {
-    window.location = 'https://chuckypage.github.io/Chuck-Thesis2017/HornyBoys/index.html';
+    window.location = '../HornyBoys/index.html';
 });
 
 
 $('#strippericon').click(function () {
-    window.location = 'https://chuckypage.github.io/Chuck-Thesis2017/Dreamhouse/index.html';
+    window.location = '../Dreamhouse/index.html';
 });
 
 $('#fileicon').click(function () {
-    window.location = 'https://chuckypage.github.io/Chuck-Thesis2017/ReadMe/index.html';
+    window.location = '../ReadMe/index.html';
 });
 
 $('#handicon').click(function () {
-    window.location = 'https://chuckypage.github.io/Chuck-Thesis2017/VanityMirror/index.html';
+    window.location = '../VanityMirror/index.html';
 });
 
 $('#buynowicon').click(function () {
-    window.location = 'http://chuckypage.github.io/coreinteraction-studio-CHUCK/project3/index.html';
+    window.location = '../BuyNow/index.html';
 });
 
 $('#soapicon').click(function () {
-    window.location = 'https://chuckypage.github.io/Chuck-Thesis2017/MagicCleanEraser/index.html';
+    window.location = '../MagicCleanEraser/index.html';
 });
 
 $('#antiageicon').click(function () {
-    window.location = 'https://chuckypage.github.io/Chuck-Thesis2017/ArtofAntiAging/index.html';
+    window.location = '../ArtofAntiAging/index.html';
 });
 
 $('#houseicon').click(function () {
-    window.location = 'http://chuckypage.github.io/coreinteraction-studio-CHUCK/project3/index.html';
+    window.location = '../index.html';
 });
 
 // var imageList = [

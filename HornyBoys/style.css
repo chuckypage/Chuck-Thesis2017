@@ -1,7 +1,7 @@
 body {
 	/*height: 100%;
 	width: 100%;*/
-	cursor: none !important;
+	cursor: pointer;
 	margin: -1px;
 	margin-top: -1px;
 	overflow: scroll;
@@ -17,10 +17,12 @@ html {
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
+  cursor:pointer;
 }
 
 .image {
-	margin-left: 200px;
+    z-index: -1;
+	/*margin-left: 200px;*/
 	position: absolute;
 	transform: translate(-50%, -50%);
     opacity: 1;
@@ -28,44 +30,135 @@ html {
 }
 
 .wrapper {
+    background-position: center;
   width: 300px;
   height: 180px;
-  background-image: url(wild.png);
+  background-image: url(look.gif);
 
 }
 
 .wrappertwo {
   width: 300px;
   height: 180px;
-  background-image: url(see.png);
-
+  background-size: 60%;
+  background-image: url(go.gif);
+  background-position: center;
 }
 
 .wrapperthree {
   width: 300px;
   height: 180px;
-  background-image: url(teens.png);
-
+  background-size: 60%;
+  background-image: url(girlsexy.gif);
+  background-position: center;
 }
 
 .wrapperfour {
+  background-position: center;    
   width: 300px;
   height: 180px;
-  background-image: url(tarts.png);
+  background-size: 70%;
+  background-image: url(cumtwo.gif);
 
 }
 
 .wrapperfive {
+    background-position: center;
   width: 300px;
   height: 180px;
-  background-image: url(wet.png);
+  background-size: 90%;
+  background-image: url(letsplay.gif);
 
 }
 
 .wrappersix {
+    background-position: center;
   width: 300px;
   height: 180px;
+  background-size: 70%;
   background-image: url(clickforboobs.png);
+
+}
+
+.wrapperseven {
+    background-position: center;
+  width: 300px;
+  height: 400px;
+  background-size: 70%;
+  background-image: url(stripperflash.gif);
+
+}
+
+.wrappereight {
+    background-position: center;
+  width: 300px;
+  height: 400px;
+  background-size: 70%;
+  background-image: url(strippermove.gif);
+
+}
+.wrappernine {
+    background-position: center;
+  width: 300px;
+  height: 400px;
+  background-size: 70%;
+  background-image: url(pointerbounce.gif);
+
+}
+.wrapperten {
+    background-position: center;
+  width: 300px;
+  height: 400px;
+  background-size: 70%;
+  background-image: url(freetrial.gif);
+
+}
+.wrappereleven {
+    background-position: center;
+  width: 300px;
+  height: 400px;
+  background-size: 70%;
+  background-image: url(downloadnow.gif);
+
+}
+.wrappertwelve {
+    background-position: center;
+  width: 300px;
+  height: 400px;
+  background-size: 70%;
+  background-image: url(herearrow.gif);
+
+}
+.wrapperthirteen {
+    background-position: center;
+  width: 300px;
+  height: 400px;
+  background-size: 70%;
+  background-image: url(flash.gif);
+
+}
+.wrapperfourteen {
+    background-position: center;
+  width: 300px;
+  height: 400px;
+  background-size: 70%;
+  background-image: url(sohot.gif);
+
+}
+.wrapperfifteen {
+    background-position: center;
+  width: 300px;
+  height: 400px;
+  background-size: 70%;
+  background-image: url(hotstop.gif);
+
+}
+.wrappersixteen {
+    background-position: center;
+  width: 300px;
+  height: 400px;
+  background-size: 70%;
+  background-image: url(hotone.gif);
 
 }
 
@@ -93,7 +186,7 @@ html {
     padding: 5px;
     color: #fff;
     z-index: 900000;
-    	-webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8));
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8));
 
 	-webkit-animation: popupOverAnim 100ms cubic-bezier(.42, 0, .58, 1);
 }
@@ -358,15 +451,28 @@ a.in_text:hover {
 }
 
 .info_content {
-    padding-top: 10px;
-    padding-left: 100px;
-    color: #001df9;
+     text-align: left center;
+    padding-top: 12px;
+    padding-left: 93px;
+    color: #fffa00;
     display: none;
+     margin-top: 110px;
+    right: 20px;
+	bottom:30px;
+    overflow: hidden;
+    height: 100px;
+    display: none;
+    line-height: 98%;
     font-family: sans-serif;
-    font-style: s;
-    font-size: 24px;
-    width:300px;
-    -webkit-filter: drop-shadow(0px 0px 2px white);
+    font-size: 100%;
+    width:200px;
+    height: 100px;
+    text-shadow:  0px 3px 3px, black;
+   -webkit-filter: drop-shadow(0px 2px 2px black);
+    transform: scaleY(2.6) scaleX(1) rotate(-4deg);
+    letter-spacing: 1.5px;    
+     -ms-transform: scaleY(2.6) scaleX(1) rotate(-4deg); /* IE 9 */
+    -webkit-transform:scaleY(2.6) scaleX(1)  rotate(-4deg); /* Chrome, Safari, Opera */
 
 
 }
@@ -378,6 +484,7 @@ a.in_text:hover {
 }
 
 .play {
+    z-index: 999999999999;
     /*border: pink 1px solid;*/
     position: fixed;
     width: 150px;
@@ -405,7 +512,7 @@ a.in_text:hover {
     background-image: url("leftnav.png");
 	background-repeat: no-repeat;
     background-size: 150px;
-    z-index: 9800000;
+     z-index: 999999999999;
 }
 
 .playback:hover {
@@ -425,9 +532,11 @@ a.in_text:hover {
     bottom: 15px;
     left: -80px;
     display: table;
-    height: 90%;
-    z-index: 150;
-    width: 2%;
+    height: 100%;
+    z-index: 800050;
+    /*width: 2%;*/
+    margin-top: 900px;
+    padding-top: 60px;
    
 }
 
@@ -443,9 +552,16 @@ a.in_text:hover {
 /*}*/
 
 .dropdown-content {
+	text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+	background: -webkit-linear-gradient(top, #fc0071, lightpink);
+	background: linear-gradient(top, #fc0071, lightpink);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+		-webkit-filter: drop-shadow(0px 0px 8px black);
     /*background-color: grey;*/
-    display: none;
+    display: table-cell;
     vertical-align: middle;
+    display: none;
     opacity:0;
     transition:opacity 0.2s linear;
 }
@@ -456,11 +572,11 @@ a.in_text:hover {
 
 }
 .contents_link {
-	
+	margin-left: 30px;
     text-align: center;
     font-size: 24px;
- /*   font-family: "Stanley", Times, serif;*/
-	/*font-style: italic;*/
+   font-family: 'Shrikhand', cursive;
+	font-style: italic;
 }
 
 #houseicon {
@@ -474,12 +590,12 @@ a.in_text:hover {
 }
 
 #houseicon:hover {
-
-	width: 100px;
-	background-size: 90px;
+	width:140px;
+	background-size: 100px;
 	height: 120px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
+	
 }
 
 #titicon {
@@ -498,7 +614,6 @@ a.in_text:hover {
 	height: 110px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
-	
 }
 
 #strippericon {
@@ -524,10 +639,8 @@ a.in_text:hover {
 	height: 75px;
     background-image: url("run.gif");
 	background-repeat: no-repeat;
-	/*margin-left: 20px;*/
     background-size: 60px;
     background-position: center;
-    margin-top: 8px;
     -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
@@ -543,50 +656,46 @@ a.in_text:hover {
 #handicon {
     z-index: 20;
 	width: 100px;
-	height: 105px;
+	height: 100px;
 	background-position: center;
     background-image: url("flowerhand.png");
 	background-repeat: no-repeat;
     background-size: 70px;
-    margin-top: 10px;
     -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
 #handicon:hover {
 	z-index: 500;
 	width: 100px;
-	height: 120px;
+	height: 107px;
 	background-size: 85px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
 }
 
 #buynowicon {
-    /*border: 1px solid black;*/
 	width: 120px;
-	height: 15px;
+	height: 20px;
     background-image: url("buynow.png");
 	background-repeat: no-repeat;
-	margin-top: 5px;
 	background-position: center;
-	padding-top: 40px;
-    background-size: 110px 50px;
+	padding-top: 30px;
+    background-size: 110px;
     -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
 #buynowicon:hover {
-	width:120px;
+	width: 120px;
 	height: 40px;
-	background-size: 130px 70px;
+	background-size: 130px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
 }
 
 #soapicon {
-    /*border: 1px black solid;*/
     /*background-color: pink;*/
     width: 120px;
-	height: 35px;
+	height: 30px;
     background-image: url("soapicon.png");
 	background-repeat: no-repeat;
 	padding-top: 20px;
@@ -597,7 +706,7 @@ a.in_text:hover {
 
 #soapicon:hover {
     width:120px;
-	height: 50px;
+	height: 65px;
 	background-size: 85px;
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
@@ -842,7 +951,7 @@ a.in_text:hover {
     background-repeat: no-repeat;
     width: 300px;
     height: 450px;
-    background-size: 100%;
+    background-size: 90%;
     -webkit-filter: drop-shadow(5px 5px 5px yellow);
   	filter: drop-shadow(5px 5px 5px yellow);
 	
@@ -886,7 +995,8 @@ a.in_text:hover {
 }
 
 .pussy {
-	cursor: none;
+    /*border: 1px solid black;*/
+	cursor: pointer;
 	display: none;
     margin: auto;
     top: 1500px;
@@ -897,7 +1007,7 @@ a.in_text:hover {
     background-image: url(seepussy.png);	
     background-repeat: no-repeat;
     width: 300px;
-    height: 450px;
+    height: 150px;
     background-size: 100%;
     -webkit-filter: drop-shadow(5px 5px 5px hotpink);
   	filter: drop-shadow(5px 5px 5px hotpink);
@@ -916,7 +1026,7 @@ a.in_text:hover {
 }
 
 .bible {
-	cursor: none;
+	cursor: pointer;
 	display: none;
     margin: auto;
     top: 1800px;

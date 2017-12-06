@@ -171,14 +171,11 @@ a.in_text:hover {
     /*border: 1px black solid;*/
     /*background-color: hotpink;*/
     position: fixed;
-    bottom: 15px;
+    bottom: 50px;
     left: -80px;
-    display: table;
-    height: 100%;
     z-index: 800050;
-    /*width: 2%;*/
-    margin-top: 900px;
-    padding-top: 60px;
+    top: 60px;
+    overflow: auto;
    
 }
 

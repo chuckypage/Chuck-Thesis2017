@@ -163,7 +163,7 @@ $('#handicon').click(function () {
 });
 
 $('#buynowicon').click(function () {
-    window.location = '../project3/index.html';
+    window.location = '../BuyNow/index.html';
 });
 
 $('#soapicon').click(function () {
@@ -175,7 +175,7 @@ $('#antiageicon').click(function () {
 });
 
 $('#houseicon').click(function () {
-    window.location = '../project3/index.html';
+    window.location = '../index.html';
 });
     
 // $('.rand').click(function() {
@@ -200,7 +200,17 @@ $(function(){
     "wrapperthree", 
     "wrapperfour", 
     "wrapperfive", 
-    "wrappersix"
+    "wrappersix",
+    "wrapperseven",
+    "wrappereight",
+    "wrappernine",
+    "wrapperten",
+    "wrappereleven",
+    "wrappertwelve",
+    "wrapperthirteen",
+    "wrapperfourteen",
+    "wrapperfifteen",
+    "wrappersixteen",
         ]
 	var fadeDelay = 1000;
 	var fadeDuration = 1000;
@@ -215,9 +225,49 @@ $(function(){
 				"left": e.pageX + 'px',
 				"top": e.pageY + 'px'
 			})
-			.appendTo(document.body);}, 30000);
+			.appendTo(document.body);}, 1000);
     });
 });
+
+var song1 = $('#sound-1');
+var song2 = $('#sound-2');
+var song3 = $('#sound-3');
+var song4 = $('#sound-4');
+var song5 = $('#sound-5');
+var song6 = $('#sound-6');
+var song7 = $('#sound-7');
+
+var audioArray = [song1, song2, song3, song4, song5, song6, song7];
+var i=0;
+var lastPlayedFile = null;
+$(document).click(function(e){
+  if(lastPlayedFile !== null) {
+     lastPlayedFile[0].currentTime = 0;
+     lastPlayedFile.trigger('pause'); 
+  }
+  if (i< audioArray.length){
+     lastPlayedFile = audioArray[i];
+     audioArray[i].trigger('play');
+     i++;
+  } else if (i>=audioArray.length){
+     i = 0;
+     lastPlayedFile = audioArray[0];
+     audioArray[i].trigger('play');
+  };
+});
+
+// function playsound()
+// {    
+//     var filepath='helloboys.wav';
+//     var audio = new Audio();   
+//     audio.src = filepath;
+//     audio.controls = true;
+//     audio.autoplay = true;
+// }
+
+// $(document).click(function(e) {
+//     playsound();
+// });
 
 $(".pussy").click(function(){
     $("#popup").css("display", "block");
