@@ -240,16 +240,33 @@ function setupCanvases() {
         var percentage = notBlack / (pdata.length / 4);
         
         if (percentage > .5) { 
-        console.log('Testing console');
-  
+        // console.log('Testing console');
+        var sound1 = new Audio('heavenly.m4a'); 
+
+		//double equals means compare 
+		if (isdead == true) {}
+		else {
+		sound1.play();
+		isdead = true
+		}
+		
+		
         }
 		
 			if (e.cancelable) { e.preventDefault(); } 
-			return false;
+			return false
+			
+			
 		}
-
+		
 		return true;
+		
 	};
+
+	var isdead = false
+	
+	
+	
 
 	c.addEventListener('mousedown', mousedown_handler, false);
 	c.addEventListener('touchstart', mousedown_handler, false);
