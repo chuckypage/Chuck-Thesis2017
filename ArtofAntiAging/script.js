@@ -102,7 +102,7 @@ $('#strippericon').click(function () {
     window.location = '../Dreamhouse/index.html';
 });
 
-$('#fileicon').click(function () {
+$('#bouncyicon').click(function () {
     window.location = '../ReadMe/index.html';
 });
 
@@ -124,6 +124,10 @@ $('#antiageicon').click(function () {
 
 $('#houseicon').click(function () {
     window.location = '../index.html';
+});
+
+$('#sexy').click(function () {
+    window.location = '../SexyGenerator/index.html';
 });
     
     

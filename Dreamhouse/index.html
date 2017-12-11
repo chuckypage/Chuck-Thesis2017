@@ -1,16 +1,16 @@
 <html>
 <head>
 	<title>Barbie Dreamhouse</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+
 	<link rel="stylesheet" href="style.css">
-	
+	<link rel="stylesheet" href="../unistyle.css">
 	
  
 </head>
 
 <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
 <body>
-	<form action="" method="" name="" onsubmit="refreshpage();" id="button" style="top:0;left:700;width:50;height:50;position:absolute;"><input name="submit" type="submit" value="Refresh"></form>
+	<!--<form action="" method="" name="" onsubmit="refreshpage();" id="button" style="top:0;left:700;width:50;height:50;position:absolute;"><input name="submit" type="submit" value="Refresh"></form>-->
 
 <!--<section class="buttons">-->
 <!--  <button class="zoom-in">Zoom In</button>-->
@@ -23,65 +23,106 @@
 <!--  <button id="buttonplay"></button>-->
 <!--</div>-->
 
+
+<button id="button">&#128266</button>
+<!--<button class="muteicon"></button>-->
+
+<!--<audio id="audio">-->
+<!--  <source src='barbie.m4a' type='audio/m4a'/>-->
+<!--</audio>-->
+
+
+	<audio id="audio" preload="auto" tabindex="0" loop >
+ 	<source src="barbie.m4a"> </audio>
+
+
+   <div class="console-hands">
+        <div class='console-row'>
+				<div class= "console-back"></div>
+				<div class= "console-forward"></div>
+			</div>
+		</div>
+
+<div class="frame">
+         
+     </div>
+     
+     <div class="slideshow">
+    <img style= "padding-left: 130px;" src="roughdream.png" width="62%" height="105%" alt="first image" >
+    <img style= "padding-top: 50px;"src="housetwo.png" width="70%" height="100%" alt="second image">
+    <img style= "padding-top: 300px; padding-left: 200px"src="housethree.png" width="70%" height="100%"  alt="third image">
+</div>
+     
+
+
+
 <div class="playnow"></div>
 <div class="playback"></div>
-		<div id="contents">
-<div class="dropdown">
-  <center><a href="#one"><div id="houseicon"><img src="" ></div></a></center>
-  <div class="dropdown-content">
-    <div class="contents_link"><a href="#one"> Home </a></div>
+<div id="navbarcontainer">
+
+<div class="navbar">
+  <div id="houseicon"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Home </a></div>
   </div>
 </div>
 
-<div class="dropdown">
-  <center><a href="#two"><div id="strippericon"><img src="" ></div></a></center>
-  <div class="dropdown-content">
-    <div class="contents_link"><a href="#two"> Dream House </a></div>
+<div class="navbar">
+  <div id="strippericon"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Dream House </a></div>
   </div>
 </div>
 
-<div class="dropdown">
-  <center><a href="#three"><div id="fileicon"><img src="" ></div></a></center>
-  <div class="dropdown-content">
-    <div class="contents_link"><a href="#three"> Read Me </a></div>
+<div class="navbar">
+  <div id="bouncyicon"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Read Me </a></div>
   </div>
 </div>
 
-<div class="dropdown">
-  <center><a href="#four"><div id="handicon"><img src="" ></div></a></center>
-  <div class="dropdown-content">
-    <div class="contents_link"><a href="#four"> Vanity Mirror </a></div>
+<div class="navbar">
+  <div id="handicon"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Vanity Mirror </a></div>
   </div>
 </div>
 
-<div class="dropdown">
-  <center><a href="#five"><div id="buynowicon"><img src="" ></div></a></center>
-  <div class="dropdown-content">
-    <div class="contents_link"><a href="#five"> Buy Now </a></div>
+<div class="navbar">
+  <div id="buynowicon"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Buy Now </a></div>
+  </div>
+</div>
+ 
+<div class="navbar">
+ <div id="soapicon"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Magic Clean Eraser </a></div>
   </div>
 </div>
 
-<div class="dropdown">
- <center> <a href="#six"><div id="soapicon"><img src="" ></div></a></center>
-  <div class="dropdown-content">
-    <div class="contents_link"><a href="#six"> Magic Clean Eraser </a></div>
+<div class="navbar">
+  <div id="antiageicon"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Fountain of Youth </a></div>
   </div>
 </div>
 
-<div class="dropdown">
-  <center><a href="#seven"><div id="antiageicon"><img src="" ></div></a></center>
-  <div class="dropdown-content">
-    <div class="contents_link"><a href="#seven"> Fountain of Youth </a></div>
+<div class="navbar">
+  <div id="titicon"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Boys will be Boys </a></div>
   </div>
 </div>
 
-<div class="dropdown">
-  <center><a href="#eight"><div id="titicon"><img src="" ></div></a></center>
-  <div class="dropdown-content">
-    <div class="contents_link"><a href="#one"> Boys will be Boys </a></div>
+<div class="navbar">
+  <div id="sexy"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Sexy Generator </a></div>
   </div>
 </div>
-
+ 
 </div>
 
 <div id="info"> 
@@ -231,37 +272,31 @@
 <!--  </div>-->
 <!--</section>-->
 
-	<div class="house">
+<!--	<div class="house">-->
 
-	</div>
+<!--	</div>-->
 	
-	<div class="housetwo">
+<!--	<div class="housetwo">-->
 
-	</div>
+<!--	</div>-->
 
-		<div class="housethree">
+<!--		<div class="housethree">-->
 
-	</div>
-
-
-		<div class="housefour">
-
-	</div>
+<!--	</div>-->
 
 
-		<div class="housefive">
+<!--		<div class="housefour">-->
 
-	</div>
+<!--	</div>-->
 
-</div>
 
- 	<div class= "audio">
+<!--		<div class="housefive">-->
 
-	<audio id="audio" preload="auto" tabindex="0" controls="controls" loop >
- 	<source src="barbie.m4a">
- 	<source src="">
+<!--	</div>-->
 
- 	</div>
+<!--</div>-->
+
+ 	
 
 
 
@@ -285,19 +320,19 @@
 $('.playnow').on('click',function() {
     $('.playback').fadeIn(900);
     $('.playnow').fadeOut(900);
-    if($('#contents').css('left')=='0px'){
-        $('#contents').animate({left: '-250px'}, 500);        
+    if($('#navbarcontainer').css('left')=='0px'){
+        $('#navbarcontainer').animate({left: '-70px'}, 500);        
     }else{
-        $('#contents').animate({left:0}, 500); 
+        $('#navbarcontainer').animate({left:0}, 500); 
     }
 });
     $('.playback').on('click',function() {
        $('.playback').fadeOut(900);
     $('.playnow').fadeIn(900); 
-     if($('#contents').css('left')=='0px'){
-        $('#contents').animate({left: '-250px'}, 500);        
+     if($('#navbarcontainer').css('left')=='0px'){
+        $('#navbarcontainer').animate({left: '-70px'}, 500);        
     }else{
-        $('#contents').animate({left:0}, 500); 
+        $('#navbarcontainer').animate({left:0}, 500); 
     }
 });
     	  

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../unistyle.css">
+
+
+	
+	<title>Sexy Generator</title>
+    </head>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    
+    <body>
+      
+<!--      <div id="wrapper">-->
+<!--    <img id="img1"src="#">-->
+<!--    <img id="img2"src="#">-->
+   
+<!--</div>-->
+        
+        
+        
+
+        
+        <div class="playnow"></div>
+        <div class="playback"></div>
+		<div id="navbarcontainer">
+
+<div class="navbar">
+  <div id="houseicon"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Home </a></div>
+  </div>
+</div>
+
+<div class="navbar">
+  <div id="strippericon"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Dream House </a></div>
+  </div>
+</div>
+
+<div class="navbar">
+  <div id="bouncyicon"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Read Me </a></div>
+  </div>
+</div>
+
+<div class="navbar">
+  <div id="handicon"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Vanity Mirror </a></div>
+  </div>
+</div>
+
+<div class="navbar">
+  <div id="buynowicon"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Buy Now </a></div>
+  </div>
+</div>
+ 
+<div class="navbar">
+ <div id="soapicon"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Magic Clean Eraser </a></div>
+  </div>
+</div>
+
+<div class="navbar">
+  <div id="antiageicon"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Fountain of Youth </a></div>
+  </div>
+</div>
+
+<div class="navbar">
+  <div id="titicon"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Boys will be Boys </a></div>
+  </div>
+</div>
+
+<div class="navbar">
+  <div id="sexy"></div>
+  <div class="navbartitles">
+    <div class="titlelinks"><a> Sexy Generator </a></div>
+  </div>
+  
+</div>
+
+</div>
+
+<div id="info"> 
+
+    <div class="info_content"> Info Goes Here...</div> 
+
+</div>
+
+
+        
+        <div class="sexybutton">
+        </div>
+
+
+<div class="frameone">
+       <div class="generatorone">
+            <img id="image"  src="" d name="randimg" >
+        </div>
+        
+        <div class="generatortwo">
+            <img id="imagetwo"   style="height:80%;" src="" name="ranimg" >
+        </div>
+        
+</div>        
+        
+        <div class="generatorthree">
+            <img id="imagethree" style= "height:65%;" src="" name="randimg" >
+        </div>
+        
+        <div class="generatorfour">
+            <img id="imagefour" style="height:100%; width:110%;" src="" name="ranimg" >
+        </div>
+    </body>
+    
+     <script src="jquery-3.2.1.min.js"></script>
+	
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+    
+    <script>
+        
+$('.playnow').on('click',function() {
+    $('.playback').fadeIn(900);
+    $('.playnow').fadeOut(900);
+    if($('#navbarcontainer').css('left')=='0px'){
+        $('#navbarcontainer').animate({left: '-70px'}, 500);        
+    }else{
+        $('#navbarcontainer').animate({left:0}, 500); 
+    }
+});
+    $('.playback').on('click',function() {
+       $('.playback').fadeOut(900);
+    $('.playnow').fadeIn(900); 
+     if($('#navbarcontainer').css('left')=='0px'){
+        $('#navbarcontainer').animate({left: '-70px'}, 500);        
+    }else{
+        $('#navbarcontainer').animate({left:0}, 500); 
+    }
+});   
+    </script>
+   
+</html>

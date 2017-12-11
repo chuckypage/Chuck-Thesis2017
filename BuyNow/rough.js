@@ -7,7 +7,7 @@ $('#strippericon').click(function () {
     window.location = '../Dreamhouse/index.html';
 });
 
-$('#fileicon').click(function () {
+$('#bouncyicon').click(function () {
     window.location = '../ReadMe/index.html';
 });
 
@@ -31,6 +31,17 @@ $('#houseicon').click(function () {
     window.location = '../index.html';
 });
 
+$('#sexy').click(function () {
+    window.location = '../SexyGenerator/index.html';
+});
+
+$(".buybutton").click(function(){
+    $(".buypopup").show();
+  });
+  
+  $("#close_popup").click(function(){
+    $(".buypopup").hide();
+  }); 
 
 
 
@@ -88,7 +99,7 @@ function setFigure() {
 
 
 var currentAudio = 0;
-var audioClasses = [ 'selfhelpyo.m4a', 'groove.m4a', 'beautiful.m4a', 'elevator.m4a'];
+var audioClasses = [ 'selfhelpyo.m4a', 'powerbeauty.mp3', 'groove.m4a', 'beautiful.m4a', 'elevator.m4a', 'perfectbody.mp3'];
 var songs = []
 
 function prevAudio() {

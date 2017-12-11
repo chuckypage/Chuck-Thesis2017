@@ -6,7 +6,7 @@ body {
 	margin-top: -1px;
 	overflow: scroll;
 }
-
+ 
 html {
 	/*width: 100%;
     height: 100%;*/
@@ -207,6 +207,7 @@ html {
 	font-family: sans-serif;
 	font-size: 40px;
 	cursor: pointer;
+	-webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
 #close_popup:hover{
@@ -262,6 +263,7 @@ html {
 	font-family: sans-serif;
 	font-size: 40px;
 	cursor: pointer;
+	-webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
 #close_popuptwo:hover{
@@ -479,259 +481,9 @@ a.in_text:hover {
 
 #info:hover .info_content {
 	display:block;
-	
-
 }
 
-.play {
-    z-index: 999999999999;
-    /*border: pink 1px solid;*/
-    position: fixed;
-    width: 150px;
-	height: 50px;
-    background-image: url("rightnav.png");
-	background-repeat: no-repeat;
-    background-size: 150px;
-    /*-webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;*/
-    
-}
 
-.play:hover {
-    width: 160px;
-	background-size: 160px;
-	height: 56px; 
-	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
-  	filter: drop-shadow(6px 6px 6px #f900b7);
-}
-
-.playback {
-    display: none;
-    position: fixed;
-    width: 150px;
-	height: 50px;
-    background-image: url("leftnav.png");
-	background-repeat: no-repeat;
-    background-size: 150px;
-     z-index: 999999999999;
-}
-
-.playback:hover {
-    cursor: pointer;
-    z-index: 9800000;
-    width: 160px;
-	background-size: 160px;
-	height: 56px; 
-	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
-  	filter: drop-shadow(6px 6px 6px #f900b7);
-}
-
-#contents {
-    /*border: 1px black solid;*/
-    /*background-color: hotpink;*/
-    position: fixed;
-    bottom: 15px;
-    left: -80px;
-    display: table;
-    height: 100%;
-    z-index: 800050;
-    /*width: 2%;*/
-    margin-top: 900px;
-    padding-top: 60px;
-   
-}
-
-.dropdown {
-    display: table-row;
-    text-align: center;
-    -webkit-filter: drop-shadow(0px 2px 2px purple);
-}
-
-/*.dropdown > img {*/
-/*    display: table-cell;*/
-
-/*}*/
-
-.dropdown-content {
-	text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-	background: -webkit-linear-gradient(top, #fc0071, lightpink);
-	background: linear-gradient(top, #fc0071, lightpink);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-		-webkit-filter: drop-shadow(0px 0px 8px black);
-    /*background-color: grey;*/
-    display: table-cell;
-    vertical-align: middle;
-    display: none;
-    opacity:0;
-    transition:opacity 0.2s linear;
-}
-
-.dropdown:hover .dropdown-content {
-	display: table-cell;
-     opacity: 1;
-
-}
-.contents_link {
-	margin-left: 30px;
-    text-align: center;
-    font-size: 24px;
-   font-family: 'Shrikhand', cursive;
-	font-style: italic;
-}
-
-#houseicon {
-    width: 100px;
-    height: 70px;
-    background-image: url("houseicon.png");
-	background-repeat: no-repeat;
-    background-size: 70px;
-    background-position: center;
-    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
-}
-
-#houseicon:hover {
-	width:140px;
-	background-size: 100px;
-	height: 120px;
-	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
-  	filter: drop-shadow(6px 6px 6px #f900b7);
-	
-}
-
-#titicon {
-	width: 120px;
-    height: 94px;
-    background-image: url("boob.png");
-	background-repeat: no-repeat;
-    background-size: 90px;
-    background-position: center;
-    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
-}
-
-#titicon:hover {
-	width:140px;
-	background-size: 120px;
-	height: 110px;
-	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
-  	filter: drop-shadow(6px 6px 6px #f900b7);
-}
-
-#strippericon {
-	width: 100px;
-	height: 100px;
-    background-image: url("stripper.png");
-	background-repeat: no-repeat;
-    background-size: 50px;
-    background-position: center;
-    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
-}
-
-#strippericon:hover {
-	width: 120px;
-	height: 110px;
-	background-size: 60px;
-	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
-  	filter: drop-shadow(6px 6px 6px #f900b7);
-}
-
-#fileicon {
-	width: 60px;
-	height: 75px;
-    background-image: url("run.gif");
-	background-repeat: no-repeat;
-    background-size: 60px;
-    background-position: center;
-    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
-}
-
-#fileicon:hover {
-	
-	width: 70px;
-	height: 87px;
-	background-size: 70px;
-	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
-  	filter: drop-shadow(6px 6px 6px #f900b7);
-}
-
-#handicon {
-    z-index: 20;
-	width: 100px;
-	height: 100px;
-	background-position: center;
-    background-image: url("flowerhand.png");
-	background-repeat: no-repeat;
-    background-size: 70px;
-    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
-}
-
-#handicon:hover {
-	z-index: 500;
-	width: 100px;
-	height: 107px;
-	background-size: 85px;
-	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
-  	filter: drop-shadow(6px 6px 6px #f900b7);
-}
-
-#buynowicon {
-	width: 120px;
-	height: 20px;
-    background-image: url("buynow.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	padding-top: 30px;
-    background-size: 110px;
-    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
-}
-
-#buynowicon:hover {
-	width: 120px;
-	height: 40px;
-	background-size: 130px;
-	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
-  	filter: drop-shadow(6px 6px 6px #f900b7);
-}
-
-#soapicon {
-    /*background-color: pink;*/
-    width: 120px;
-	height: 30px;
-    background-image: url("soapicon.png");
-	background-repeat: no-repeat;
-	padding-top: 20px;
-	background-position: center;
-    background-size: 70px;
-    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
-}
-
-#soapicon:hover {
-    width:120px;
-	height: 65px;
-	background-size: 85px;
-	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
-  	filter: drop-shadow(6px 6px 6px #f900b7);
-    
-}
-
-#antiageicon {
-    /*background-color: limegreen;*/
-    width: 120px;
-	height: 100px;
-    background-image: url("antiageicon.png");
-	background-repeat: no-repeat;
-	background-position: center;
-    background-size: 85px;
-    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
-}
-
-#antiageicon:hover {
-    width:120px;
-	height: 120px;
-	background-size: 100px;
-	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
-  	filter: drop-shadow(6px 6px 6px #f900b7);
-    
-}
 
 
 .container {
@@ -757,6 +509,7 @@ a.in_text:hover {
   	filter: drop-shadow(5px 5px 5px red);
   	-webkit-animation: pulse linear .5s infinite;
 	animation: pulse linear .5s infinite;
+	-webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 @-webkit-keyframes pulse {
 	0% { width:300px; } 
@@ -797,6 +550,7 @@ a.in_text:hover {
      height: 100px;
      -webkit-filter: drop-shadow(5px 5px 5px red);
   	filter: drop-shadow(5px 5px 5px red);
+  	-webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
   	
 	
 	
@@ -826,7 +580,7 @@ a.in_text:hover {
 
 .buttontwo:hover {
 	cursor: pointer;
-	background-image: url(lightmoms.png);
+	/*background-image: url(lightmoms.png);*/
 	 -webkit-animation: none;
     animation: none; 
 	z-index: 5;
@@ -855,6 +609,7 @@ a.in_text:hover {
     background-size: 105%;
          -webkit-filter: drop-shadow(5px 5px 5px red);
   	filter: drop-shadow(5px 5px 5px red);
+  	-webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 
 }
 
@@ -886,6 +641,7 @@ a.in_text:hover {
     -webkit-filter: drop-shadow(5px 5px 5px hotpink);
   	filter: drop-shadow(5px 5px 5px hotpink);
    -webkit-animation: rotation 2s infinite linear;
+   -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
 @-webkit-keyframes rotation {
@@ -926,6 +682,7 @@ a.in_text:hover {
     -webkit-filter: drop-shadow(5px 5px 5px hotpink);
   	filter: drop-shadow(5px 5px 5px hotpink);
   	-webkit-animation: rotation 2s infinite linear;
+  	-webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 
 .titright:hover {
@@ -954,6 +711,7 @@ a.in_text:hover {
     background-size: 90%;
     -webkit-filter: drop-shadow(5px 5px 5px yellow);
   	filter: drop-shadow(5px 5px 5px yellow);
+  	-webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 	
 }
 
@@ -982,6 +740,7 @@ a.in_text:hover {
     background-size: 100%;
     -webkit-filter: drop-shadow(5px 5px 5px lime);
   	filter: drop-shadow(5px 5px 5px lime);
+  	-webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 	
 }
 
@@ -1014,6 +773,7 @@ a.in_text:hover {
   	-ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
     transform: rotate(7deg);
+    -webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 	
 }
 
@@ -1045,6 +805,7 @@ a.in_text:hover {
   	animation-name: rotate;
   	animation-duration: 4s;
   	animation-timing-function: linear;
+  	-webkit-transition: width 0.2s, height 0.2s, background-size 0.2s;
 }
 @-webkit-keyframes rotate {
     from {transform: rotateY( 0deg );}

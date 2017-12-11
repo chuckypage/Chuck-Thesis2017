@@ -11,9 +11,9 @@ $('#titicon').click(function () {
 
 $('#strippericon').click(function () {
     window.location = '../Dreamhouse/index.html';
-});
+}); 
 
-$('#fileicon').click(function () {
+$('#bouncyicon').click(function () {
     window.location = '../ReadMe/index.html';
 });
 
@@ -35,6 +35,10 @@ $('#antiageicon').click(function () {
 
 $('#houseicon').click(function () {
     window.location = '../index.html';
+});
+
+$('#sexy').click(function () {
+    window.location = '../SexyGenerator/index.html';
 });
 
 
@@ -60,13 +64,42 @@ $(document).ready(function() {
     $( ".girleighteen" ).draggable().resizable();
     $( ".girlnineteen" ).draggable().resizable();
     $( ".girltwenty" ).draggable().resizable();
-    $( ".house" ).draggable();
-    $( ".housetwo" ).draggable();
-    $( ".housethree" ).draggable();
-    $( ".housefour" ).draggable();
+    $( ".slideshow" ).draggable();
+   
   });
 
 
+var interval = undefined;
+$(document).ready(function () {
+    interval = setInterval(getNext, 10000000); // milliseconds
+    $('.console-forward').on('click', getNext);
+    $('.console-back').on('click', getPrev);
+});
+
+function getNext() {
+    var $curr = $('.slideshow img:visible'),
+        $next = ($curr.next().length) ? $curr.next() : $('.slideshow img').first();
+
+    transition($curr, $next);
+}
+
+function getPrev() {
+    var $curr = $('.slideshow img:visible'),
+        $next = ($curr.prev().length) ? $curr.prev() : $('.slideshow img').last();
+    transition($curr, $next);
+}
+
+function transition($curr, $next) {
+    clearInterval(interval);
+
+    $next.css('z-index', 2).fadeIn('slow', function () {
+        $curr.hide().css('z-index', 0);
+        $next.css('z-index', 1);
+    });
+    
+
+
+}
 
 
     $(document).on('mousemove', function(e){
@@ -76,6 +109,50 @@ $(document).ready(function() {
             pointerEvents: 'none'
 
     });
+    
+    var button = document.getElementById("button");
+    var audio = document.getElementById("audio");
+
+button.addEventListener("click", function(){
+  if(audio.paused){
+    audio.play();
+    button.innerHTML = "&#128263";
+  } else {
+    audio.pause();
+    button.innerHTML = "&#128266";
+  }
+});
+    
+    
+    
+//     var audio = new Audio("barbie.m4a");
+//     audio.volume = 0.2;
+//         $(".playicon").click(function() {
+//         audio.play();
+//              $('.muteicon').show();
+//              $('.playicon').hide();
+//     });
+    
+//     $(".muteicon").click(function() {
+//     audio.pause();
+//              $('.muteicon').hide();
+//              $('.playicon').show();
+// });
+    
+    
+    // function play() {
+    //     var audio = document.getElementById('audio');
+    //     if (audio.paused) {
+    //         audio.play();
+    //         $('.playicon').removeClass('.playicon')
+    //         $('.playicon').addClass('.muteicon')
+    //     }else{
+    //         audio.pause();
+    //         audio.currentTime = 0
+    //         $('#play').addClass('.playicon')
+    //         $('#play').removeClass('muteicon')
+    //     }
+    // }
 
 // });
     $('.girlfourteen, .girlfifteen, .girlsixteen, .girlseventeen, .girleighteen, .girlnineteen, .girltwenty, .girlthirteen, .girltwelve, .girleleven, .girlten, .girlnine, .girleight, .girlseven, .girlsix, .girlfive, .girlfour, .girlthree, .girltwo, .girlone').hover(
@@ -89,24 +166,24 @@ $(document).ready(function() {
 
 
 
-    $(document).ready(
-    function() {
-        $(".house").click(function() {
-            $(".housetwo").show();
-            $(".house").hide();
-            });
-        $(".housetwo").click(function() {
-            $(".housethree").show();
-            $(".housetwo").hide();
-            });
-        $(".housethree").click(function() {
-            $(".housefour").show();
-            $(".housethree").hide();
-            });
-         $(".buttonone").click(function() {
-            $(".buttontwo").show();
+    // $(document).ready(
+    // function() {
+    //     $(".house").click(function() {
+    //         $(".housetwo").show();
+    //         $(".house").hide();
+    //         });
+    //     $(".housetwo").click(function() {
+    //         $(".housethree").show();
+    //         $(".housetwo").hide();
+    //         });
+    //     $(".housethree").click(function() {
+    //         $(".housefour").show();
+    //         $(".housethree").hide();
+    //         });
+    //      $(".buttonone").click(function() {
+    //         $(".buttontwo").show();
         
-            });
+    //         });
 
 
         // $("#panzoom").panzoom({
@@ -120,7 +197,7 @@ $(document).ready(function() {
 
         
         
-    });
+   
     });
 
 
