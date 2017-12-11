@@ -15,7 +15,7 @@ $(document).ready(function(){
         
         $('.border').hide();
         
-        
+         
     })
     
      $('.titleft').click(function(){
