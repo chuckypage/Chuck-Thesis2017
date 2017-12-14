@@ -2,9 +2,18 @@ var things = [
   "drill.png", 
   "fridge.png",
   "car1.png",
-  "car2.png"];
+  "car2.png",
+  "watchone.png", 
+  "watchtwo.png",
+  "watchthree.png",
+  "cologneone.png",
+  "colognetwo.png",
+  "colognethree.png"
+  
+  ];
 
 var sexybody = [ 
+  "handsone.png",
   "girl1.png", 
   "girl2.png",
   "girl3.png",
@@ -42,14 +51,18 @@ function pickRandom(arr) {
 
 
 function init() {
+    
   document.getElementById("gobutton").addEventListener("click", function(){
+      
+    //   doBounce($(girlimages), 3, '10px', 300);
     random_image();
+    
   });
   random_image();
 }
 
 
-
+ 
  
  
 // $(document).ready(function(){

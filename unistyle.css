@@ -101,7 +101,7 @@ a.in_text:hover {
 	/*background: linear-gradient(top, #fc0071, lightpink);*/
 	/*-webkit-background-clip: text;*/
 	/*-webkit-text-fill-color: transparent;*/
-		-webkit-filter:  drop-shadow(0px 0px 7px black);
+	-webkit-filter:  drop-shadow(0px 0px 7px black);
     /*background-color: grey;*/
     vertical-align: middle;
     display: none;
