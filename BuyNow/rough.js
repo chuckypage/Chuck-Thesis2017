@@ -138,7 +138,7 @@ setAudio();
 
 
 
-Chat.onMessage(function (data) {
+function handlemessage(data) {
 
 	if (data.value == 0) {
 		prevBg();
@@ -167,7 +167,7 @@ Chat.onMessage(function (data) {
 	} else if (data.value == 12) {
 		nextAudio();
 	}
-});
+}
 
 
 
@@ -183,7 +183,7 @@ Chat.onMessage(function (data) {
 */
 
 $('.console-back').click(function() {
-	Chat.sendMessage({
+	handlemessage({
 	  sender: 'suhhh',
 	  type: 'raw',
 	  value: 0
@@ -191,35 +191,35 @@ $('.console-back').click(function() {
 	
 });
 $('.console-forward').click(function() {
-	Chat.sendMessage({
+	handlemessage({
 	  sender: 'suhhh',
 	  type: 'raw',
 	  value: 2
 	});
 });
 $('.console-minus').click(function() {
-	Chat.sendMessage({
+	handlemessage({
 	  sender: 'suhhh',
 	  type: 'raw',
 	  value: 4
 	});
 });
 $('.console-plus').click(function() {
-	Chat.sendMessage({
+	handlemessage({
 	  sender: 'suhhh',
 	  type: 'raw',
 	  value: 6
 	});
 });
 $('.console-playback').click(function() {
-	Chat.sendMessage({
+	handlemessage({
 	  sender: 'suhhh',
 	  type: 'raw',
 	  value: 8
 	});
 });
 $('.console-playforward').click(function() {
-	Chat.sendMessage({
+	handlemessage({
 	  sender: 'suhhh',
 	  type: 'raw',
 	  value: 10

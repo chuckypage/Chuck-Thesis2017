@@ -1,32 +1,10 @@
-var images = [ 
+var things = [ 
   "drill.png", 
   "fridge.png",
   "car1.png",
   "car2.png"];
 
-init();
-
-function random_image(images) {
-  var random = randomize(images);
-  while(images[random] === document.getElementById("image").src){
-    random = randomize(images)
-  }
-  document.getElementById("image").src = images[random].toString();
-}
-
-function randomize(array){
-  return Math.floor((Math.random() * (array.length)));
-}
-
-function init() {
-  document.getElementById("image").addEventListener("click", function(){
-    random_image(images);
-  });
-  random_image(images);
-}
-
-$(document).ready(function(){
-var imagestwo = [ 
+var sexybody = [ 
   "girl1.png", 
   "girl2.png",
   "girl3.png",
@@ -47,91 +25,97 @@ var imagestwo = [
 
 init();
 
-function random_image(imagestwo) {
-  var randomimg = randomize(imagestwo);
-  while(imagestwo[randomimg] === document.getElementById("imagetwo").src){
-    randomimg = randomize(imagestwo)
-  }
-  document.getElementById("imagetwo").src = imagestwo[randomimg].toString();
+function random_image() {
+  var thing = pickRandom(things)
+  var sexy = pickRandom(sexybody)
+// console.log()
+  document.getElementById("girlimages").src = sexy;
+  document.getElementById("thingimages").src = thing;
 }
 
-function randomize(array){
-  return Math.floor((Math.random() * (array.length)));
+
+function pickRandom(arr) {
+	// ... random array element
+	
+  return arr[Math.floor(Math.random() * arr.length)];
 }
+
 
 function init() {
-  document.getElementById("imagetwo").addEventListener("click", function(){
-    random_image(imagestwo);
+  document.getElementById("gobutton").addEventListener("click", function(){
+    random_image();
   });
-  random_image(imagestwo);
+  random_image();
 }
-});
+
+
+
  
  
-$(document).ready(function(){
-var imagesthree = [ 
-  "watchone.png", 
-  "watchtwo.png",
-  "watchthree.png",
-  "cologneone.png",
-  "colognetwo.png",
-  "colognethree.png",
-];
+// $(document).ready(function(){
+// var imagesthree = [ 
+//   "watchone.png", 
+//   "watchtwo.png",
+//   "watchthree.png",
+//   "cologneone.png",
+//   "colognetwo.png",
+//   "colognethree.png",
+// ];
 
-init();
+// init();
 
-function random_image(imagesthree) {
-  var randomimg = randomize(imagesthree);
-  while(imagesthree[randomimg] === document.getElementById("imagethree").src){
-    randomimg = randomize(imagesthree)
-  }
-  document.getElementById("imagethree").src = imagesthree[randomimg].toString();
-}
+// function random_image(imagesthree) {
+//   var randomimg = randomize(imagesthree);
+//   while(imagesthree[randomimg] === document.getElementById("imagethree").src){
+//     randomimg = randomize(imagesthree)
+//   }
+//   document.getElementById("imagethree").src = imagesthree[randomimg].toString();
+// }
 
-function randomize(array){
-  return Math.floor((Math.random() * (array.length)));
-}
+// function randomize(array){
+//   return Math.floor((Math.random() * (array.length)));
+// }
 
-function init() {
-  document.getElementById("imagethree").addEventListener("click", function(){
-    random_image(imagesthree);
-  });
-  random_image(imagesthree);
-}
-});
+// function init() {
+//   document.getElementById("imagethree").addEventListener("click", function(){
+//     random_image(imagesthree);
+//   });
+//   random_image(imagesthree);
+// }
+// });
  
  
-$(document).ready(function(){
-var imagesfour = [ 
-  "handcheek.png", 
-  "handchin.png",
-  "girlwater.png",
-  "feethand.png",
-  "faceribbon.png",
-  "handsone.png",
-];
+// $(document).ready(function(){
+// var imagesfour = [ 
+//   "handcheek.png", 
+//   "handchin.png",
+//   "girlwater.png",
+//   "feethand.png",
+//   "faceribbon.png",
+//   "handsone.png",
+// ];
 
-init();
+// init();
 
-function random_image(imagesfour) {
-  var randomimg = randomize(imagesfour);
-  while(imagesfour[randomimg] === document.getElementById("imagefour").src){
-    randomimg = randomize(imagesfour)
-  }
-  document.getElementById("imagefour").src = imagesfour[randomimg].toString();
-}
+// function random_image(imagesfour) {
+//   var randomimg = randomize(imagesfour);
+//   while(imagesfour[randomimg] === document.getElementById("imagefour").src){
+//     randomimg = randomize(imagesfour)
+//   }
+//   document.getElementById("imagefour").src = imagesfour[randomimg].toString();
+// }
 
-function randomize(array){
-  return Math.floor((Math.random() * (array.length)));
-}
+// function randomize(array){
+//   return Math.floor((Math.random() * (array.length)));
+// }
 
-function init() {
-  document.getElementById("imagefour").addEventListener("click", function(){
-    random_image(imagesfour);
-  });
-  random_image(imagesfour);
-}
-});
+// function init() {
+//   document.getElementById("imagefour").addEventListener("click", function(){
+//     random_image(imagesfour);
+//   });
+//   random_image(imagesfour);
+// }
+// });
 
 $('#titicon').click(function () {
     window.location = '../HornyBoys/index.html';
