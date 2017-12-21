@@ -26,6 +26,14 @@ var msg = new SpeechSynthesisUtterance('Woman should show skin but not so much i
   msg.pitch = 0; //0 to 2
 	msg.lang = "english";
 window.speechSynthesis.speak(msg);
+// speechSynthesis.cancel();
+$(window).bind('beforeunload',function(){
+
+     //save info somewhere
+
+    speechSynthesis.cancel();
+
+});
 
 // var msg = new SpeechSynthesisUtterance('');
 // 	msg.rate = .4; // 0.1 to 10
