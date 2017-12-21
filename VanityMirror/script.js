@@ -27,8 +27,8 @@ var msg = new SpeechSynthesisUtterance('Woman should show skin but not so much i
 	msg.lang = "english";
 window.speechSynthesis.speak(msg);
 
-window.location.reload();
-// speechSynthesis.cancel();
+
+speechSynthesis.cancel();
 // $(window).bind('beforeunload',function(){
 
 //      //save info somewhere
