@@ -10,10 +10,12 @@
     
     <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
     <body>
+        
         <div id="container">
         <video autoplay="true" id="videoElement">
         </video>
         
+       
        
     <!--</div>-->
      <!--<div class="frame">-->
@@ -199,6 +201,18 @@ $('.playnow').on('click',function() {
         $('#navbarcontainer').animate({left:0}, 500); 
     }
 });
+
+var video = document.querySelector("#videoElement");
+ 
+if (navigator.mediaDevices.getUserMedia) {       
+    navigator.mediaDevices.getUserMedia({video: true})
+  .then(function(stream) {
+    video.srcObject = stream;
+  })
+  .catch(function(err0r) {
+    console.log("Something went wrong!");
+  });
+}
 
     
 </script>

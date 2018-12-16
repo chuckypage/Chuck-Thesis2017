@@ -206,14 +206,15 @@ form {
     background-size: 80px 80px;
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-filter: drop-shadow(0px 0px 2px #f900b7 );
-    -webkit-transition: width 2s, height 2s, background-size 2s, -webkit-transform 2s; /* Safari */
+    /*-webkit-filter: drop-shadow(0px 0px 2px #f900b7);*/
+     -webkit-transition: width 2s, height 2s, background-size 2s, -webkit-transform 2s; /* Safari */
     transition: width 2s, height 2s, background-size 2s, transform 2s;
 	z-index: 8888888;
 	animation-iteration-count:infinite;
   	animation-name: rotate;
   	animation-duration: 4s;
   	animation-timing-function: linear;
+  	
 }
 @-webkit-keyframes rotate {
     from {transform: rotateY( 0deg );}
@@ -229,8 +230,8 @@ form {
 	width: 300px;
     height: 300px;
     border-radius: 25px;
-    -webkit-filter: drop-shadow(6px 6px 6px #f900b7);
-  	filter: drop-shadow(6px 6px 6px #f900b7);
+   /* -webkit-filter: drop-shadow(6px 6px 6px #f900b7);*/
+  	/*filter: drop-shadow(6px 6px 6px #f900b7);*/
     
 }
 

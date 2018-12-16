@@ -46,6 +46,7 @@ a.in_text:hover {
 	height: 55px; 
 	-webkit-filter: drop-shadow(6px 6px 6px #f900b7);
   	filter: drop-shadow(6px 6px 6px #f900b7);
+  	-webkit-transition: width 0.3s, height 0.3s, background-size 0.3s;
 }
 
 .playback {

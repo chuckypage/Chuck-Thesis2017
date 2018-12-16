@@ -232,6 +232,7 @@ a.in_text:hover {
 
 .video {
         object-fit: contain;
+        background-color: pink;
 }
 
 /*#webCam {*/
